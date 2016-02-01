@@ -17,7 +17,7 @@ MVC模式是软件工程中一种软件架构模式，一般把软件模式分�
 
 下面我们来实现一个简单的下拉框控件，我们可以对它进行增删操作；如下图所示：
 
-[![ ](/assets/理解 JavaScript 中的 MVC1.jpg)](/assets/理解 JavaScript 中的 MVC1.jpg)
+[![ ](/assets/理解 JavaScript 中的 MVC1.webp)](/assets/理解 JavaScript 中的 MVC1.webp)
 
 代码如下：
 
