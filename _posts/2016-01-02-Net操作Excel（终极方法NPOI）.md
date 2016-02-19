@@ -15,6 +15,7 @@ Asp.net/C#操作Excel已经是老生长谈的事情了，可下面我说的这�
 
 Asp.Net导出代码：
 
+
 {% highlight cpp linenos %}
 
 NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
@@ -93,7 +94,7 @@ public DataTable ImportExcelFile(string filePath)
 {% endhighlight %}
 
 
- C#导出Excel：
+C#导出Excel：
 
 
 {% highlight cpp linenos %}
@@ -135,9 +136,9 @@ public static void WriteExcel(DataTable dt, string filePath)
 {% endhighlight %}
 
 
- 结论
- =====
+结论
+=====
 
- 这样就很简单的解决Excel的操作了，大家可以试试，很好用，如果觉得对您有用请推荐一下，谢谢。
+这样就很简单的解决Excel的操作了，大家可以试试，很好用，如果觉得对您有用请推荐一下，谢谢。
 
- 出处：[http://vipstone.cnblogs.com/](http://vipstone.cnblogs.com/) 
+出处：[http://vipstone.cnblogs.com/](http://vipstone.cnblogs.com/) 
