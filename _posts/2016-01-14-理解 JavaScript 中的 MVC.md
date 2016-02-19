@@ -17,7 +17,7 @@ MVC模式是软件工程中一种软件架构模式，一般把软件模式分�
 
 下面我们来实现一个简单的下拉框控件，我们可以对它进行增删操作；如下图所示：
 
-[![ ](/assets/理解 JavaScript 中的 MVC1.webp)](/assets/理解 JavaScript 中的 MVC1.webp)
+[![ ](/assets/理解 JavaScript 中的 MVC1.png)](/assets/理解 JavaScript 中的 MVC1.png)
 
 代码如下：
 
@@ -30,23 +30,17 @@ MVC模式是软件工程中一种软件架构模式，一般把软件模式分�
 function Mode(elems) {
     // 所有元素
     this._elems = elems;
- 
     // 被选中元素的索引
     this._selectedIndex = -1;
- 
     // 增加一项
     this.itemAdd = new Event(this);
- 
     // 删除一项
     this.itemRemoved = new Event(this);
- 
     this.selectedIndexChanged = new Event(this);
 }
  
 Mode.prototype = {
- 
     constructor: 'Mode',
- 
     // 获取所有的项
     getItems: function(){
         return [].concat(this._elems);
@@ -94,7 +88,6 @@ Event.prototype = {
         }
     }
 };
- 
 /*
  * 视图显示模型数据，并触发UI事件。
  */
@@ -155,7 +148,6 @@ function Controller(model,view) {
     this._model = model;
     this._view = view;
     var that = this;
- 
     this._view.listModified.attach(function(sender,args){
         that.updateSelected(args.index);
     });
@@ -168,21 +160,18 @@ function Controller(model,view) {
 }
 Controller.prototype = {
     constructor: 'Controller',
- 
     addItem: function(){
         var item = window.prompt('Add item:', '');
         if (item) {
             this._model.addItem(item);
         }
     },
- 
     delItem: function(){
         var index = this._model.getSelectedIndex();
         if(index !== -1) {
             this._model.removeItem(index);
         }
     },
- 
     updateSelected: function(index){
         this._model.setSelectedIndex(index);
     }

@@ -16,20 +16,15 @@ Asp.net/C#操作Excel已经是老生长谈的事情了，可下面我说的这�
 Asp.Net导出代码：
 
 {% highlight cpp linenos %}
-
 NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
 NPOI.SS.UserModel.ISheet sheet = book.CreateSheet("test_01");
-
 // 第一列
 NPOI.SS.UserModel.IRow row = sheet.CreateRow(0);
 row.CreateCell(0).SetCellValue("第一列第一行");
-
 // 第二列
 NPOI.SS.UserModel.IRow row2 = sheet.CreateRow(1);
 row2.CreateCell(0).SetCellValue("第二列第一行");
-
 // ...
-
 // 写入到客户端  
 System.IO.MemoryStream ms = new System.IO.MemoryStream();
 book.Write(ms);
@@ -38,13 +33,11 @@ Response.BinaryWrite(ms.ToArray());
 book = null;
 ms.Close();
 ms.Dispose();
-
 {% endhighlight %}
 
 Asp.Net导入代码：
 
 {% highlight cpp linenos %}
-
 HSSFWorkbook hssfworkbook;  
 #region  
 public DataTable ImportExcelFile(string filePath)  
@@ -62,7 +55,7 @@ public DataTable ImportExcelFile(string filePath)
         throw e;  
     }  
     #endregion  
-  
+	
     NPOI.SS.UserModel.Sheet sheet = hssfworkbook.GetSheetAt(0);  
     System.Collections.IEnumerator rows = sheet.GetRowEnumerator();  
     DataTable dt = new DataTable();  
@@ -91,12 +84,11 @@ public DataTable ImportExcelFile(string filePath)
     return dt;  
 }  
 #endregion
-
 {% endhighlight %}
 
  C#导出Excel：
 
- {% highlight cpp linenos %}
+{% highlight cpp linenos %}
 
  public static void WriteExcel(DataTable dt, string filePath)
 {
@@ -132,8 +124,7 @@ public DataTable ImportExcelFile(string filePath)
         }
     }
 }
-
- {% endhighlight %}
+{% endhighlight %}
 
  结论
  =====
