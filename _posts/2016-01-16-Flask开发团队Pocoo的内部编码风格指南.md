@@ -64,6 +64,7 @@ Pocoo团队编码风格指南适用于所有Pocoo团队的项目。总体来说�
 顶层函数与类之间空两行，此外都只空一行。不要在代码中使用太多的空行来区分不同的逻辑模块。
 
 示例：
+
 	def hello(name):
 		print 'Hello %s!' % name
 	 
@@ -88,13 +89,15 @@ Pocoo团队编码风格指南适用于所有Pocoo团队的项目。总体来说�
 	单目运算符与运算对象之间不空格（例如，-，~等），即使单目运算符位于括号内部也一样。
 	双目运算符与运算对象之间要空格。
 
-好风格：	
+好风格：
+	
 	exp = -1.05
 	value = (item_value / item_count) * offset / exp
 	value = my_list[index]
 	value = my_dict['key']
 	
 坏风格：
+
 	exp = - 1.05
 	value = ( item_value / item_count ) * offset / exp
 	value = (item_value/item_count)*offset/exp
@@ -107,9 +110,12 @@ Pocoo团队编码风格指南适用于所有Pocoo团队的项目。总体来说�
 不要拿常量与变量进行对比，应该拿变量与常量进行对比。
 
 好风格：
+
 	if method == 'md5':
 		pass
+		
 坏风格：
+
 	if 'md5' == method:
     pass
 
@@ -152,6 +158,7 @@ Pocoo团队编码风格指南适用于所有Pocoo团队的项目。总体来说�
 **文档字符串规范：**
 
 所有文档字符串均以reStructuredText格式编写，方便Sphinx处理。文档字符串的行数不同，布局也不一样。如果只有一行，代表字符串结束的三个引号与代表字符串开始的三个引号在同一行。如果为多行，文档字符串中的文本紧接着代表字符串开始的三个引号编写，代表字符串结束的三个引号则自己独立成一行。
+
 	def foo():
 		"""This is a simple docstring."""
 	 
@@ -159,7 +166,8 @@ Pocoo团队编码风格指南适用于所有Pocoo团队的项目。总体来说�
 		"""This is a longer docstring with so much information in there
 		that it spans three lines.  In this case, the closing triple quote
 		is on its own line.
-		"""	
+		"""
+		
 一般来说，文档字符串应分成简短摘要（尽量一行）和详细介绍。如果必要的话，摘要与详细介绍之间空一行。
 
 **模块头部：**
@@ -176,14 +184,17 @@ Pocoo团队编码风格指南适用于所有Pocoo团队的项目。总体来说�
 		:copyright: (c) YEAR by AUTHOR.
 		:license: LICENSE_NAME, see LICENSE_FILE for more details.
 	"""
+	
 请注意，要让你开发的Flask扩展（extension）通过官方团队审核，则必须提供相应的版权与协议文件。
 
 注释
 ====
 
 注释的规范与文档字符串编写规范类似。二者均以reStructuredText格式编写。如果使用注释来编写类属性的文档，请在#符号后添加一个冒号，：。
+
 	class User(object):
 		#: the name of the user as unicode string
 		name = Column(String)
 		#: the sha1 hash of the password + inline salt
 		pw_hash = Column(String)
+		
