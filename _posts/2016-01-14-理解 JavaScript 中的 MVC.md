@@ -176,14 +176,20 @@ Controller.prototype = {
 };
 {% endhighlight %}
 
+
 HTML代码如下：
+
+
 {% highlight cpp linenos %}
 <select id="list" size="10" style="width: 10rem">select>br/>
 <button id="plusBtn">  +  button>
 <button id="minusBtn">  -  button>
 {% endhighlight %}
 
+
 页面初始化代码如下：
+
+
 {% highlight cpp linenos %}
 $(function () {
     var model = new Mode(['PHP', 'JavaScript']),
@@ -197,18 +203,22 @@ $(function () {
 });
 {% endhighlight %}
 
+
 代码分析如下：
 
 先分下下 我们是要实现什么样的功能; 基本功能有：一个下拉框，通过用户输入的操作来实现用户增加一项及用户选中一项后删除一项的功能;
 当然也添加了用户切换到那一项的事件;
 
 比如我们现在来增加一条数据的时候，在视图层上添加监听事件，如下代码：
+
+
 {% highlight cpp linenos %}
 // 添加按钮绑定事件
 this._elements.addButton.click(function(e){
     that.addButtonClicked.notify();
 });
 {% endhighlight %}
+
 
 然后调用观察者类Event中的方法notify(发布一个事件) that.addButtonClicked.notify();大家都知道，观察者模式又叫发布-订阅模式,
 让多个观察者对象同时监听某一个主题对象，当某一个主题对象发生改变的时候，所有依赖它的对象都会得到通知;
@@ -217,7 +227,11 @@ this._elements.addButton.click(function(e){
 this._view.addButtonClicked.attach(function(){
     that.addItem();
 });
+{% endhighlight %}
+
 之后调用自身的方法addItem();代码如下：
+
+{% highlight cpp linenos %}
 addItem: function(){
     var item = window.prompt('Add item:', '');
     if (item) {
@@ -227,6 +241,7 @@ addItem: function(){
 {% endhighlight %}
 
 调用模型层(model)的方法addItem();把一条数据插入到select框里面去;model(模型层)的addItem()方法代码如下：
+
 {% highlight cpp linenos %}
 // 增加一项
 addItem: function(elem) {
