@@ -16,6 +16,7 @@ Asp.net/C#操作Excel已经是老生长谈的事情了，可下面我说的这�
 Asp.Net导出代码：
 
 {% highlight cpp linenos %}
+
 NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
 NPOI.SS.UserModel.ISheet sheet = book.CreateSheet("test_01");
 // 第一列
@@ -28,16 +29,21 @@ row2.CreateCell(0).SetCellValue("第二列第一行");
 // 写入到客户端  
 System.IO.MemoryStream ms = new System.IO.MemoryStream();
 book.Write(ms);
-Response.AddHeader("Content-Disposition", string.Format("attachment; filename={0}.xls", DateTime.Now.ToString("yyyyMMddHHmmssfff")));
+Response.AddHeader("Content-Disposition", 
+		string.Format("attachment; filename={0}.xls", 
+		DateTime.Now.ToString("yyyyMMddHHmmssfff")));
 Response.BinaryWrite(ms.ToArray());
 book = null;
 ms.Close();
 ms.Dispose();
 {% endhighlight %}
 
+
 Asp.Net导入代码：
 
+
 {% highlight cpp linenos %}
+
 HSSFWorkbook hssfworkbook;  
 #region  
 public DataTable ImportExcelFile(string filePath)  
@@ -86,11 +92,13 @@ public DataTable ImportExcelFile(string filePath)
 #endregion
 {% endhighlight %}
 
+
  C#导出Excel：
+
 
 {% highlight cpp linenos %}
 
- public static void WriteExcel(DataTable dt, string filePath)
+public static void WriteExcel(DataTable dt, string filePath)
 {
     if (!string.IsNullOrEmpty(filePath) && null != dt && dt.Rows.Count > 0)
     {
@@ -125,6 +133,7 @@ public DataTable ImportExcelFile(string filePath)
     }
 }
 {% endhighlight %}
+
 
  结论
  =====
