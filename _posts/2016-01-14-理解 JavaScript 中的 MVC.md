@@ -94,12 +94,10 @@ Event.prototype = {
 function View(model,elements){
     this._model = model;
     this._elements = elements;
- 
     this.listModified = new Event(this);
     this.addButtonClicked = new Event(this);
     this.delButtonClicked = new Event(this);
     var that = this;
- 
     // 绑定模型监听器
     this._model.itemAdd.attach(function(){
         that.rebuildList();
