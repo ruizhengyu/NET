@@ -28,9 +28,7 @@ Asp.Net导出代码：
 	// 写入到客户端  
 	System.IO.MemoryStream ms = new System.IO.MemoryStream();
 	book.Write(ms);
-	Response.AddHeader("Content-Disposition", 
-		string.Format("attachment; filename={0}.xls", 
-		DateTime.Now.ToString("yyyyMMddHHmmssfff")));
+	Response.AddHeader("Content-Disposition",string.Format("attachment; filename={0}.xls", DateTime.Now.ToString("yyyyMMddHHmmssfff")));
 	Response.BinaryWrite(ms.ToArray());
 	book = null;
 	ms.Close();
@@ -45,45 +43,45 @@ Asp.Net导入代码：
 	#region
 	public DataTable ImportExcelFile(string filePath)
 	{
-    		#region//初始化信息
-    		try
-    		{
-        		using (FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.Read))
-        		{
-            			hssfworkbook = new HSSFWorkbook(file);
-        		}
-    		}
-    		catch (Exception e)
-    		{
-        		throw e;
-    		}
-    		#endregion
-    		NPOI.SS.UserModel.Sheet sheet = hssfworkbook.GetSheetAt(0);
-    		System.Collections.IEnumerator rows = sheet.GetRowEnumerator();
-    		DataTable dt = new DataTable();
+    	#region//初始化信息
+    	try
+    	{
+        	using (FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+        	{
+            	hssfworkbook = new HSSFWorkbook(file);
+        	}
+    	}
+    	catch (Exception e)
+    	{
+        	throw e;
+    	}
+    	#endregion
+    	NPOI.SS.UserModel.Sheet sheet = hssfworkbook.GetSheetAt(0);
+    	System.Collections.IEnumerator rows = sheet.GetRowEnumerator();
+    	DataTable dt = new DataTable();
 		for (int j = 0; j < (sheet.GetRow(0).LastCellNum); j++)
-    		{
-        		dt.Columns.Add(Convert.ToChar(((int)'A') + j).ToString());
-    		}
-    		while (rows.MoveNext())
-    		{
+    	{
+        	dt.Columns.Add(Convert.ToChar(((int)'A') + j).ToString());
+    	}
+    	while (rows.MoveNext())
+    	{
 			HSSFRow row = (HSSFRow)rows.Current;
-        		DataRow dr = dt.NewRow();
-        		for (int i = 0; i < row.LastCellNum; i++)
-        		{
-            			NPOI.SS.UserModel.Cell cell = row.GetCell(i);
-            			if (cell == null)
-        			{
-                			dr[i] = null;
-            			}
-            			else
-            			{
-                			dr[i] = cell.ToString();  
-            			}
-        		}
-        		dt.Rows.Add(dr);
-    		}
-    		return dt;
+			DataRow dr = dt.NewRow();
+			for (int i = 0; i < row.LastCellNum; i++)
+			{
+				NPOI.SS.UserModel.Cell cell = row.GetCell(i);
+				if (cell == null)
+				{
+					dr[i] = null;
+				}
+				else
+				{
+					dr[i] = cell.ToString();  
+				}
+			}
+			dt.Rows.Add(dr);
+		}
+		return dt;
 	}
 	#endregion
 	
@@ -95,36 +93,36 @@ C#导出Excel：
 
 	public static void WriteExcel(DataTable dt, string filePath)
 	{
-    		if (!string.IsNullOrEmpty(filePath) && null != dt && dt.Rows.Count > 0)
-    		{
-        		NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
-        		NPOI.SS.UserModel.ISheet sheet = book.CreateSheet(dt.TableName);
-        		NPOI.SS.UserModel.IRow row = sheet.CreateRow(0);
-        		for (int i = 0; i < dt.Columns.Count; i++)
-        		{
-        			row.CreateCell(i).SetCellValue(dt.Columns[i].ColumnName);
-        		}
-        		for (int i = 0; i < dt.Rows.Count; i++)
-        		{
-        			NPOI.SS.UserModel.IRow row2 = sheet.CreateRow(i + 1);
-            			for (int j = 0; j < dt.Columns.Count; j++)
-            			{
-                			row2.CreateCell(j).SetCellValue(Convert.ToString(dt.Rows[i][j]));
-            			}
-        		}
-        		// 写入到客户端  
-        		using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
-        		{
-            			book.Write(ms);
-            			using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write))
-            			{
-                			byte[] data = ms.ToArray();
-                			fs.Write(data, 0, data.Length);
-                			fs.Flush();
-            			}
-            			book = null;
-        		}
-    		}
+    	if (!string.IsNullOrEmpty(filePath) && null != dt && dt.Rows.Count > 0)
+    	{
+        	NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
+        	NPOI.SS.UserModel.ISheet sheet = book.CreateSheet(dt.TableName);
+        	NPOI.SS.UserModel.IRow row = sheet.CreateRow(0);
+        	for (int i = 0; i < dt.Columns.Count; i++)
+        	{
+        		row.CreateCell(i).SetCellValue(dt.Columns[i].ColumnName);
+        	}
+        	for (int i = 0; i < dt.Rows.Count; i++)
+        	{
+        		NPOI.SS.UserModel.IRow row2 = sheet.CreateRow(i + 1);
+            	for (int j = 0; j < dt.Columns.Count; j++)
+            	{
+               		row2.CreateCell(j).SetCellValue(Convert.ToString(dt.Rows[i][j]));
+            	}	
+        	}
+        	// 写入到客户端  
+        	using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+        	{
+            	book.Write(ms);
+            	using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+            	{
+               		byte[] data = ms.ToArray();
+               		fs.Write(data, 0, data.Length);
+               		fs.Flush();
+            	}
+            	book = null;
+        	}
+    	}
 	}
 
 
