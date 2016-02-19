@@ -15,7 +15,6 @@ Asp.net/C#操作Excel已经是老生长谈的事情了，可下面我说的这�
 
 Asp.Net导出代码：
 
-
 {% highlight cpp linenos %}
 
 NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
@@ -37,6 +36,7 @@ Response.BinaryWrite(ms.ToArray());
 book = null;
 ms.Close();
 ms.Dispose();
+
 {% endhighlight %}
 
 
@@ -105,7 +105,6 @@ public static void WriteExcel(DataTable dt, string filePath)
     {
         NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
         NPOI.SS.UserModel.ISheet sheet = book.CreateSheet(dt.TableName);
-
         NPOI.SS.UserModel.IRow row = sheet.CreateRow(0);
         for (int i = 0; i < dt.Columns.Count; i++)
         {
