@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 permalink: /:title/
 url: http://www.personalsite.cn
 name: 数域K上N维线性空间
