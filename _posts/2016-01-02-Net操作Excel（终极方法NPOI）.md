@@ -15,7 +15,6 @@ Asp.net/C#操作Excel已经是老生长谈的事情了，可下面我说的这�
 
 Asp.Net导出代码：
 
-
 	NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
 	NPOI.SS.UserModel.ISheet sheet = book.CreateSheet("test_01");
 	// 第一列
@@ -35,9 +34,6 @@ Asp.Net导出代码：
 	ms.Dispose();
 
 Asp.Net导入代码：
-
-
-
 
 	HSSFWorkbook hssfworkbook;
 	#region
@@ -84,12 +80,8 @@ Asp.Net导入代码：
 		return dt;
 	}
 	#endregion
-	
-
 
 C#导出Excel：
-
-
 
 	public static void WriteExcel(DataTable dt, string filePath)
 	{
@@ -124,8 +116,6 @@ C#导出Excel：
         	}
     	}
 	}
-
-
 
 结论
 =====

@@ -17,11 +17,11 @@ Pocoo团队的成员来自Python社区，统一以Pocoo的名义参与多个Pyth
 
 Pocoo团队开发了许多广受欢迎的项目，其中包括：
 
-*Flask微网络开发框架
-*Jinja2模板引擎
-*Pygments语法高亮包
-*Sphinx文档处理器
-*Werzeug WSGI工具集
+* Flask微网络开发框架
+* Jinja2模板引擎
+* Pygments语法高亮包
+* Sphinx文档处理器
+* Werzeug WSGI工具集
 
 Pocoo团队编码风格指南适用于所有Pocoo团队的项目。总体来说，Pocoo团队编码风格指南严格遵循了PEP8的要求，但略有一些不同之处，并进行了一定的扩展延伸。
 
