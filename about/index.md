@@ -11,16 +11,16 @@ comments: no
 ###联系方式：
 
 {% if site.qq %}
-ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }})
+ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }}){:target="_blank"}
 {% endif %}
-网站：[{{ site.name }}]({{ site.url }})
+网站：[{{ site.name }}]({{ site.url }}){:target="_blank"}
 
-邮箱：[{{ site.email }}](mailto:{{ site.email }})
+邮箱：[{{ site.email }}](mailto:{{ site.email }}){:target="_blank"}
 
-GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
+GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }}){:target="_blank"}
 
 ----
 
 {% if site.weibo %}
-[![新浪微博](http://service.t.sina.com.cn/widget/qmd/{{ site.weibo }}/f78fbcd2/1.png)](http://weibo.com/u/{{ site.weibo }})
+[![新浪微博](http://service.t.sina.com.cn/widget/qmd/{{ site.weibo }}/f78fbcd2/1.png)](http://weibo.com/u/{{ site.weibo }}){:target="_blank"}
 {% endif %}
