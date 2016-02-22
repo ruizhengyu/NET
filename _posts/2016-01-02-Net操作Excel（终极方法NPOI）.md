@@ -11,7 +11,7 @@ Asp.net/C#操作Excel已经是老生长谈的事情了，可下面我说的这�
 
 方法
 =====
-先去官网：[http://npoi.codeplex.com/](http://npoi.codeplex.com/)下载需要引入dll（可以选择.net2.0或者.net4.0的dll），然后在网站中添加引用。
+先去官网：[http://npoi.codeplex.com/](http://npoi.codeplex.com/){:target="_blank"}下载需要引入dll（可以选择.net2.0或者.net4.0的dll），然后在网站中添加引用。
 
 Asp.Net导出代码：
 
@@ -122,4 +122,4 @@ C#导出Excel：
 
 这样就很简单的解决Excel的操作了，大家可以试试，很好用，如果觉得对您有用请推荐一下，谢谢。
 
-出处：[http://vipstone.cnblogs.com/](http://vipstone.cnblogs.com/) 
+出处：[http://vipstone.cnblogs.com/](http://vipstone.cnblogs.com/){:target="_blank"}
