@@ -10,7 +10,7 @@ beian:
 cnzz: 1257366192
 weibo: 2237065581
 github: ruizhengyu
-pygments: true
+rouge: highlighter
 safe: true
 paginate: 20
 about: "这里是我的个人博客。"
