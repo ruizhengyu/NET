@@ -1,7 +1,7 @@
 ---
 date: 2016-05-04 09:58:11+00:00
 layout: post
-title: JavaScript经典实例 示例1-1：展示使用String split来获取关键字列表
+title: JavaScript经典实例——示例1-1：展示使用String.split来获取关键字列表
 categories: JavaScript经典实例
 tags:  JavaScript JavaScript经典实例
 ---
