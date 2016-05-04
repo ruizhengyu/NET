@@ -12,15 +12,6 @@ tags:  JavaScript  JavaScript经典实例
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Converting ISO 8601 date</title>
-<style type = "text/css">
-#dateSubmit
-{
-    background-color: #ff0;
-    width: 200px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-</style>
 <script type="text/javascript">
 //<![CDATA[
 
@@ -76,7 +67,6 @@ function convertISO8601toDate(dtstr){
 
 
 源码如下：
-----------------
 
 ``` javascript
 <!DOCTYPE html>
