@@ -6,7 +6,6 @@ categories: JavaScript经典实例
 tags:  JavaScript JavaScript经典实例
 ---
 
-<!DOCTYPE html>
 <head>
 <title>Example 1-1</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
