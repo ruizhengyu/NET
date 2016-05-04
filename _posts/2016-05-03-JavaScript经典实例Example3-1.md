@@ -18,7 +18,7 @@ tags:  JavaScript  JavaScript经典实例
     background-color: #ff0;
     width: 200px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 10px solid #ccc;
 }
 </style>
 <script type="text/javascript">
