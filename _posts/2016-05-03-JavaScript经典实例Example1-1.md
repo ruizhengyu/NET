@@ -34,7 +34,6 @@ window.onload = function(){
 
 
 源码如下：
-----------------
 
 ``` javascript
 <!DOCTYPE html>
