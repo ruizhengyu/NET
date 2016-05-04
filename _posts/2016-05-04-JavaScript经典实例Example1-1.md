@@ -71,8 +71,7 @@ window.onload = function(){
 </html>
 ``` 
 
-`JavaScript split()` 方法
-----------------
+**`JavaScript split()` 方法**
 
 定义和用法
 
@@ -101,8 +100,7 @@ stringObject.split(separator,howmany)
 
 注释：`String.split()` 执行的操作与 `Array.join` 执行的操作是相反的。
 
-`HTML DOM prompt()` 方法
-----------------
+**`HTML DOM prompt()` 方法**
 
 定义和用法
 
