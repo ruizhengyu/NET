@@ -1,7 +1,7 @@
 ---
 date: 2016-05-03 18:44:30+00:00
 layout: post
-title: JavaScript经典实例-示例3-1
+title: JavaScript经典实例 示例3-1
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
