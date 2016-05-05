@@ -15,10 +15,10 @@ tags:  JavaScript  JavaScript经典实例
 #redbox
 {
     position: absolute;
-    left: 100px;
-    top: 100px;
-    width: 200px; 
-    height: 200px;
+    left: 10px;
+    top: 10px;
+    width: 20px; 
+    height: 20px;
     background-color: red;
 }
 </style>
