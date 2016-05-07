@@ -6,7 +6,7 @@ categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-把表格值转换为数字，并且求得加和结果
+将一个SVG圆放入一个div元素中
 ----------------
 
 
