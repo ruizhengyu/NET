@@ -9,7 +9,6 @@ tags:  JavaScript  JavaScript经典实例
 把表格值转换为数字，并且求得加和结果
 ----------------
 
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Accessing numbers in table</title>
