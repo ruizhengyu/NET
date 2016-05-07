@@ -6,10 +6,10 @@ categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-把表格值转换为数字，并且求得加和结果
+将一个SVG圆放入一个div元素中
 ----------------
 
-<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Using Math method to fit a circle</title>
