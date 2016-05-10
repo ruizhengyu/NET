@@ -46,9 +46,9 @@ function concatenateString(strings, separator){
 </script>
 </head>
 <body>
-<div id="result1">
-<div id="result2">
-<div id="result3">
+<div id="result1"></div>
+<div id="result2"></div>
+<div id="result3"></div>
 </body>
 </html>
 
