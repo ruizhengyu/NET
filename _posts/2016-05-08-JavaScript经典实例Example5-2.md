@@ -22,16 +22,16 @@ while(charSets.indexOf("ab") != -1){
     charSets.splice(charSets.indexOf("ab"), 1, "**");
 }
 //alert(charSets);
-var blk = document.getElementById("result1");
-blk.innerHTML = charSets;
+var blk1 = document.getElementById("result1");
+blk1.innerHTML = charSets;
 
 //删除新元素
 while(charSets.indexOf("**") != -1){
     charSets.splice(charSets.indexOf("**"), 1);
 }
 //alert(charSets);
-var blk = document.getElementById("result2");
-blk.innerHTML = charSets;
+var blk2 = document.getElementById("result2");
+blk2.innerHTML = charSets;
 
 </script>
 </head>
