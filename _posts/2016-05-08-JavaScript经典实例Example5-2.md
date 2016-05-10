@@ -36,8 +36,8 @@ blk2.innerHTML = charSets;
 </script>
 </head>
 <body>
-<div id="result1">
-<div id="result2">
+<div id="result1"></div>
+<div id="result2"></div>
 </body>
 
 源码如下：
