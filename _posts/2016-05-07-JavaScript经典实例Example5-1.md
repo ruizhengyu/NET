@@ -39,14 +39,22 @@ multiArray[2][0] = ['test', 'again'];
 multiArray[2][1] = ['Java', 'script'];
 multiArray[2][2] = ['read', 'books'];
 
-alert(multiArray);
-alert(multiArray[2]);
-alert(multiArray[2][2][0]);
-
+//alert(multiArray);
+//alert(multiArray[2]);
+//alert(multiArray[2][2][0]);
+var blk1 = document.getElementById("result1");
+blk1.innerHTML = multiArray;
+var blk2 = document.getElementById("result2");
+blk2.innerHTML = multiArray[2];
+var blk3 = document.getElementById("result3");
+blk4.innerHTML = multiArray[2][2][0];
 //--><!]]>
 </script>
 </head>
 <body>
+<div id="result1">
+<div id="result2">
+<div id="result3">
 </body>
 </html>
 
