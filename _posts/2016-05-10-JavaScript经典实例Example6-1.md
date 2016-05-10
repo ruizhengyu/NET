@@ -18,10 +18,15 @@ tags:  JavaScript  JavaScript经典实例
 window.onload = function(){
     var items = new Array('apple', 'orange', 'cherry', 'lime');
     var sep = '*';
+    var blk1 = document.getElementById("result1");
+    blk1.innerHTML = items + sep;
     concatenateString(items, sep);
-    
-    alert(items);
-    alert(sep);
+    var blk2 = document.getElementById("result2");
+    blk2.innerHTML = multiArray[2];
+    var blk3 = document.getElementById("result3");
+    blk3.innerHTML = multiArray[2][2][0];
+    //alert(items);
+    //alert(sep);
 }
 
 function concatenateString(strings, separator){
@@ -41,6 +46,9 @@ function concatenateString(strings, separator){
 </script>
 </head>
 <body>
+<div id="result1">
+<div id="result2">
+<div id="result3">
 </body>
 </html>
 
