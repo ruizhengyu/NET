@@ -42,10 +42,10 @@ function checkVals(elemArray){
 </head>
 <body>
 <form id="picker" onsubmit="return getVals()">
-<label>Value 1:</label> <input type="text" id="first" /><br />
-<label>Value 2:</label> <input type="text" id="second" /><br />
-<label>Value 3:</label> <input type="text" id="third" /><br />
-<label>Value 3:</label> <input type="text" id="four" /><br />
+<label>Value 1:</label> <input type="text" id="first" placeholder="1" value="1"/><br />
+<label>Value 2:</label> <input type="text" id="second" placeholder="2" value="2"/><br />
+<label>Value 3:</label> <input type="text" id="third" placeholder="3" value="3"/><br />
+<label>Value 3:</label> <input type="text" id="four" placeholder="4" value="4"/><br />
 <input type="submit" value="Validte" />
 </form>
 <div id="result"></div>
