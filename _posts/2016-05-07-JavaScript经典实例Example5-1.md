@@ -47,7 +47,7 @@ blk1.innerHTML = multiArray;
 var blk2 = document.getElementById("result2");
 blk2.innerHTML = multiArray[2];
 var blk3 = document.getElementById("result3");
-blk4.innerHTML = multiArray[2][2][0];
+blk3.innerHTML = multiArray[2][2][0];
 //--><!]]>
 </script>
 </head>
