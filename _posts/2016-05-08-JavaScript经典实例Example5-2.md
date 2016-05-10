@@ -21,17 +21,23 @@ var charSets = new Array("ab", "bb", "cd", "ab", "cc", "ab", "dd", "ab");
 while(charSets.indexOf("ab") != -1){
     charSets.splice(charSets.indexOf("ab"), 1, "**");
 }
-alert(charSets);
+//alert(charSets);
+var blk = document.getElementById("result1");
+blk.innerHTML = charSets;
 
 //删除新元素
 while(charSets.indexOf("**") != -1){
     charSets.splice(charSets.indexOf("**"), 1);
 }
-alert(charSets);
+//alert(charSets);
+var blk = document.getElementById("result2");
+blk.innerHTML = charSets;
 
 </script>
 </head>
 <body>
+<div id="result1">
+<div id="result2">
 </body>
 
 源码如下：
