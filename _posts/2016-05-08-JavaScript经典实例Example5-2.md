@@ -16,28 +16,30 @@ tags:  JavaScript  JavaScript经典实例
 <script type="text/javascript">
 
 var charSets = new Array("ab", "bb", "cd", "ab", "cc", "ab", "dd", "ab");
-
+var blk1 = document.getElementById("result1");
+blk1.innerHTML = charSets;
 //替换元素
 while(charSets.indexOf("ab") != -1){
     charSets.splice(charSets.indexOf("ab"), 1, "**");
 }
 //alert(charSets);
-var blk1 = document.getElementById("result1");
-blk1.innerHTML = charSets;
+var blk2 = document.getElementById("result2");
+blk2.innerHTML = charSets;
 
 //删除新元素
 while(charSets.indexOf("**") != -1){
     charSets.splice(charSets.indexOf("**"), 1);
 }
 //alert(charSets);
-var blk2 = document.getElementById("result2");
-blk2.innerHTML = charSets;
+var blk3 = document.getElementById("result3");
+blk3.innerHTML = charSets;
 
 </script>
 </head>
 <body>
 <div id="result1"></div>
 <div id="result2"></div>
+<div id="result3"></div>
 </body>
 
 源码如下：
