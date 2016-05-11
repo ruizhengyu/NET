@@ -9,12 +9,11 @@ tags:  JavaScript  JavaScript经典实例
 使用循环和分割来替代和删除元素
 ----------------
 
-
 <head>
 <title>Looping and Splicing</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <script type="text/javascript">
-
+window.onload = function(){
 var charSets = new Array("ab", "bb", "cd", "ab", "cc", "ab", "dd", "ab");
 var blk1 = document.getElementById("result1");
 blk1.innerHTML = charSets;
@@ -33,7 +32,7 @@ while(charSets.indexOf("**") != -1){
 //alert(charSets);
 var blk3 = document.getElementById("result3");
 blk3.innerHTML = charSets;
-
+}
 </script>
 </head>
 <body>
