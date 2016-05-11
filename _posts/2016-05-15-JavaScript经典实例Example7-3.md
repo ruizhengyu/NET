@@ -38,7 +38,7 @@ function cancelEvent(event){
 }
 
 window.onload = function(){
-    badChar = prompt("Enter the ASCII value of the keyboard key you want to filter", "");
+    badChar = prompt("Enter the ASCII value of the keyboard key you want to filter", "97");
     var inputTA = document.getElementById("source");
     listenEvent(inputTA, "keypress", processClick);
 }
@@ -47,7 +47,7 @@ function processClick(evt){
     evt = evt || window.event;
     var key = evt.charCode ? evt.charCode : evt.keyCode;
     //赶走坏孩子
-    if(key === badChar){
+    if(key == badChar){
         cancelEvent(evt);
     }
 }
@@ -103,7 +103,7 @@ function processClick(evt){
     evt = evt || window.event;
     var key = evt.charCode ? evt.charCode : evt.keyCode;
     //赶走坏孩子
-    if(key === badChar){
+    if(key == badChar){
         cancelEvent(evt);
     }
 }
