@@ -14,24 +14,24 @@ tags:  JavaScript  JavaScript经典实例
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <script type="text/javascript">
 window.onload = function(){
-var charSets = new Array("ab", "bb", "cd", "ab", "cc", "ab", "dd", "ab");
-var blk1 = document.getElementById("result1");
-blk1.innerHTML = charSets;
-//替换元素
-while(charSets.indexOf("ab") != -1){
-    charSets.splice(charSets.indexOf("ab"), 1, "**");
-}
-//alert(charSets);
-var blk2 = document.getElementById("result2");
-blk2.innerHTML = charSets;
-
-//删除新元素
-while(charSets.indexOf("**") != -1){
-    charSets.splice(charSets.indexOf("**"), 1);
-}
-//alert(charSets);
-var blk3 = document.getElementById("result3");
-blk3.innerHTML = charSets;
+    var charSets = new Array("ab", "bb", "cd", "ab", "cc", "ab", "dd", "ab");
+    var blk1 = document.getElementById("result1");
+    blk1.innerHTML = charSets;
+    //替换元素
+    while(charSets.indexOf("ab") != -1){
+        charSets.splice(charSets.indexOf("ab"), 1, "**");
+    }
+    //alert(charSets);
+    var blk2 = document.getElementById("result2");
+    blk2.innerHTML = charSets;
+    
+    //删除新元素
+    while(charSets.indexOf("**") != -1){
+        charSets.splice(charSets.indexOf("**"), 1);
+    }
+    //alert(charSets);
+    var blk3 = document.getElementById("result3");
+    blk3.innerHTML = charSets;
 }
 </script>
 </head>
