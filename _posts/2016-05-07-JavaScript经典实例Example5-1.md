@@ -15,46 +15,50 @@ tags:  JavaScript  JavaScript经典实例
 <script type="text/javascript">
 //<![CDATA[
 
-//设置数组长度
-var arrayLength = 3;
-
-//创建数组
-var multiArray = new Array(arrayLength);
-for(var i = 0; i < multiArray.length; i++){
-    multiArray[i] = new Array(arrayLength);
+window.onload = function(){
+        
+    //设置数组长度
+    var arrayLength = 3;
+    
+    //创建数组
+    var multiArray = new Array(arrayLength);
+    for(var i = 0; i < multiArray.length; i++){
+        multiArray[i] = new Array(arrayLength);
+    }
+    
+    //给第一个数组索引添加项
+    multiArray[0][0] = "apple";
+    multiArray[0][1] = "banana";
+    multiArray[0][2] = "cherry";
+    
+    //给第二个数组索引添加项
+    multiArray[1][0] = 2;
+    multiArray[1][1] = 56;
+    multiArray[1][2] = 83;
+    
+    //给第三个数组索引添加项
+    multiArray[2][0] = ['test', 'again'];
+    multiArray[2][1] = ['Java', 'script'];
+    multiArray[2][2] = ['read', 'books'];
+    
+    //alert(multiArray);
+    //alert(multiArray[2]);
+    //alert(multiArray[2][2][0]);
+    var blk1 = document.getElementById("result1");
+    blk1.innerHTML = multiArray;
+    var blk2 = document.getElementById("result2");
+    blk2.innerHTML = multiArray[2];
+    var blk3 = document.getElementById("result3");
+    blk3.innerHTML = multiArray[2][2][0];
 }
 
-//给第一个数组索引添加项
-multiArray[0][0] = "apple";
-multiArray[0][1] = "banana";
-multiArray[0][2] = "cherry";
-
-//给第二个数组索引添加项
-multiArray[1][0] = 2;
-multiArray[1][1] = 56;
-multiArray[1][2] = 83;
-
-//给第三个数组索引添加项
-multiArray[2][0] = ['test', 'again'];
-multiArray[2][1] = ['Java', 'script'];
-multiArray[2][2] = ['read', 'books'];
-
-//alert(multiArray);
-//alert(multiArray[2]);
-//alert(multiArray[2][2][0]);
-var blk1 = document.getElementById("result1");
-blk1.innerHTML = multiArray;
-var blk2 = document.getElementById("result2");
-blk2.innerHTML = multiArray[2];
-var blk3 = document.getElementById("result3");
-blk3.innerHTML = multiArray[2][2][0];
 //--><!]]>
 </script>
 </head>
 <body>
-<div id="result1">
-<div id="result2">
-<div id="result3">
+<div id="result1"></div>
+<div id="result2"></div>
+<div id="result3"></div>
 </body>
 </html>
 

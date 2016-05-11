@@ -19,12 +19,12 @@ window.onload = function(){
     var items = new Array('apple', 'orange', 'cherry', 'lime');
     var sep = '*';
     var blk1 = document.getElementById("result1");
-    blk1.innerHTML = items + sep;
+    blk1.innerHTML = items + "  " + sep;
     concatenateString(items, sep);
     var blk2 = document.getElementById("result2");
-    blk2.innerHTML = multiArray[2];
+    blk2.innerHTML = items;
     var blk3 = document.getElementById("result3");
-    blk3.innerHTML = multiArray[2][2][0];
+    blk3.innerHTML = sep;
     //alert(items);
     //alert(sep);
 }
