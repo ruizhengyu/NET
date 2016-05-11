@@ -19,7 +19,7 @@ window.onload = function(){
     var items = new Array('apple', 'orange', 'cherry', 'lime');
     var sep = '*';
     var blk1 = document.getElementById("result1");
-    blk1.innerHTML = items + sep;
+    blk1.innerHTML = items + "  " + sep;
     concatenateString(items, sep);
     var blk2 = document.getElementById("result2");
     blk2.innerHTML = items;
