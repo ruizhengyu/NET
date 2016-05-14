@@ -9,7 +9,7 @@ tags:  JavaScript  JavaScript经典实例
 使用匿名函数
 ----------------
 
-<html xmlns = "http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <title>Function test</title>
 <script type="text/javascript">
