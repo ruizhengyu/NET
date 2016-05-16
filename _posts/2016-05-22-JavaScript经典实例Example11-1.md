@@ -1,68 +1,46 @@
 ---
-date: 2016-05-21 14:26:30+00:00
+date: 2016-05-22 16:26:30+00:00
 layout: post
-title: JavaScript经典实例 示例10-1
+title: JavaScript经典实例 示例11-1
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-如果脚本关闭的话，表单元素默认地设置为隐藏，如果支持脚本的话，则会显示
+展示getElementsByTagName和NodeList动态集合属性
 ----------------
 
-<html xmlns="http://www.w3.org/1999/xthml">
+<html xmlns="http://www.w3.org/1999/xthml" xml:lang="en" lang="en">
 <head>
-<title>Populating Selection Lists</title>
+<title>NodeList</title>
 <script>
 //<![CDTAT[
 
-var citystore = new Array();
-citystore[0] = ['CA', 'San Francisco'];
-citystore[1] = ['CA', 'Los Angeles'];
-citystore[2] = ['CA', 'San Diego'];
-citystore[3] = ['MO', 'St. louis'];
-citystore[4] = ['MO', 'Kansas City'];
-citystore[5] = ['WA', 'Seattle'];
-citystore[6] = ['WA', 'Spokane'];
-citystore[7] = ['WA', 'Redmond'];
-
 window.onload = function(){
-    document.getElementById("state").onchange = filterCities;
-}
-
-function filterCities(){
-    var state = this.value;
-    var city = document.getElementById("cities");
-    city.options.length = 0;
+    var imgs = document.getElementsByTagName('img');
+    var blk1 = document.getElementById("result1");
+    blk1.innerHTML = imgs.length;
+    var p = document.createElement("p");
+    var img = document.createElement("img");
+    img.src = "orchids4.preview.jpg";
+    p.appendChild(img);
     
-    for(var i = 0; i < citystore.length; i++){
-        var st = citystore[i][0];
-        if(st == state){
-            var opt = new Option(citystore[i][1]);
-            try{
-                city.add(opt, null);
-            }catch(e){
-                city.add(opt);
-            }
-        }
-    }
+    var paras = document.getElementsByTagName('p');
+    paras[0].parentNode.appendChild(p);
+    
+    var blk2 = document.getElementById("result2");
+    blk2.innerHTML = imgs.length;
+    
 }
 
 //--><!]]>
 </script>
 </head>
 <body>
-<form id="picker" method="post" action="">
-Group 1:<input type="radio" name="group1" value="one"/><br />
-Group 2:<input type="radio" name="group1" value="two"/><br />
-Group 3:<input type="radio" name="group1" value="three"/><br />
-<br />
-<div id="hidden_elements">
-Input 1:<input type="text" id="intext" />
-Input 2:<input type="text" id="intext2" />
-Input 3:<input type="text" id="intext3" /><br /><br />
-</div>
-<input type="submit" id="submitbutton" value="Send form" />
-</form>
+<p><img src="http://lovechina.xyz/assets/orchids12.preview.jpg" alt="Orchid from MBG 2009 orchid show" /></p>
+<p><img src="http://lovechina.xyz/assets/orchids6.preview.jpg" alt="Orchid from MBG 2009 orchid show" /></p>
+<p><img src="http://lovechina.xyz/assets/orchids9.preview.jpg" alt="Orchid from MBG 2009 orchid show" /></p>
+<div id="result1"></div>
+<div id="result2"></div>
 </body>
 </html>
 
@@ -70,60 +48,33 @@ Input 3:<input type="text" id="intext3" /><br /><br />
 
 ``` javascript
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xthml">
+<html xmlns="http://www.w3.org/1999/xthml" xml:lang="en" lang="en">
 <head>
-<title>Populating Selection Lists</title>
+<title>NodeList</title>
 <script>
 //<![CDTAT[
 
-var citystore = new Array();
-citystore[0] = ['CA', 'San Francisco'];
-citystore[1] = ['CA', 'Los Angeles'];
-citystore[2] = ['CA', 'San Diego'];
-citystore[3] = ['MO', 'St. louis'];
-citystore[4] = ['MO', 'Kansas City'];
-citystore[5] = ['WA', 'Seattle'];
-citystore[6] = ['WA', 'Spokane'];
-citystore[7] = ['WA', 'Redmond'];
-
 window.onload = function(){
-    document.getElementById("state").onchange = filterCities;
-}
-
-function filterCities(){
-    var state = this.value;
-    var city = document.getElementById("cities");
-    city.options.length = 0;
+    var imgs = document.getElementsByTagName('img');
+    alert(imgs.length);
+    var p = document.createElement("p");
+    var img = document.createElement("img");
+    img.src = "orchids4.preview.jpg";
+    p.appendChild(img);
     
-    for(var i = 0; i < citystore.length; i++){
-        var st = citystore[i][0];
-        if(st == state){
-            var opt = new Option(citystore[i][1]);
-            try{
-                city.add(opt, null);
-            }catch(e){
-                city.add(opt);
-            }
-        }
-    }
+    var paras = document.getElementsByTagName('p');
+    paras[0].parentNode.appendChild(p);
+    
+    alert(imgs.length);
 }
 
 //--><!]]>
 </script>
 </head>
 <body>
-<form id="picker" method="post" action="">
-Group 1:<input type="radio" name="group1" value="one"/><br />
-Group 2:<input type="radio" name="group1" value="two"/><br />
-Group 3:<input type="radio" name="group1" value="three"/><br />
-<br />
-<div id="hidden_elements">
-Input 1:<input type="text" id="intext" />
-Input 2:<input type="text" id="intext2" />
-Input 3:<input type="text" id="intext3" /><br /><br />
-</div>
-<input type="submit" id="submitbutton" value="Send form" />
-</form>
+<p><img src="orchids12.preview.jpg" alt="Orchid from MBG 2009 orchid show" /></p>
+<p><img src="orchids6.preview.jpg" alt="Orchid from MBG 2009 orchid show" /></p>
+<p><img src="orchids9.preview.jpg" alt="Orchid from MBG 2009 orchid show" /></p>
 </body>
 </html>
 ``` 
