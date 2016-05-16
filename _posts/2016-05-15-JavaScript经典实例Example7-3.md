@@ -9,6 +9,7 @@ tags:  JavaScript  JavaScript经典实例
 根据按键的ASCII值阻止一个按键值
 ----------------
 
+<html>
 <head>
 <title>Filtering Input</title>
 <script>
