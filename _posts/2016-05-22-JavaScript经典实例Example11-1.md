@@ -9,7 +9,7 @@ tags:  JavaScript  JavaScript经典实例
 展示getElementsByTagName和NodeList动态集合属性
 ----------------
 
-<html xmlns="http://www.w3.org/1999/xthml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xthml" xml:lang="en">
 <head>
 <title>NodeList</title>
 <script>
