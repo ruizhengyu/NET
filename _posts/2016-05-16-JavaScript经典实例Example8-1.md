@@ -124,4 +124,4 @@ window.onload = function(){
 </html>
 ``` 
 
-`pathname` 属性是一个可读可写的字符串，可设置或返回当前 URL 的路径部分。
+`pathname` 属性是一个可读可写的字符串，可设置或返回当前 `URL` 的路径部分。
