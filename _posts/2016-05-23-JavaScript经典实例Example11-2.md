@@ -6,7 +6,7 @@ categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-展示getElementsByTagName和NodeList动态集合属性
+getElementsByTagName的命名空间和命名空间变体之间的区别
 ----------------
 
 <html xmlns="http://www.w3.org/1999/xthml" xml:lang="en">
