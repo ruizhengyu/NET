@@ -9,7 +9,6 @@ tags:  JavaScript  JavaScript经典实例
 通过链接上的hash保存页面状态
 ----------------
 
-<!DOCTYPE html>
 <html xmls="http://ww.w3.org/1999/xhtml">
 <head>
 <title>Remember me?</title>
