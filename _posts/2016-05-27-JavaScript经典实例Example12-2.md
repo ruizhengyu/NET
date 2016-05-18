@@ -1,65 +1,62 @@
 ---
-date: 2016-05-26 14:26:30+00:00
+date: 2016-05-27 15:06:30+00:00
 layout: post
-title: JavaScript经典实例 示例12-1
+title: JavaScript经典实例 示例12-2
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-向Web页面插入一个div元素
+展示向一个Web页面添加内容的各种方法
 ----------------
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>object detection</title>
-        <style type="text/css">
-            div
-            {
-                width: 300px;
-                heigth: 20px;
-                padding: 10px;
-                margin: 10px 0;
-            }
-            
-            #div1
-            {
-                background-color: #ff0;
-            }
-            
-            .divclass
-            {
-                background-color: #cfc;
-            }
-            
-        </style>
+        <title>Adding Paragraphs</title>
         <script type="text/javascript">
-        
-            var i = 1;
-            
-            function addDiv() {
+            window.onload = function() {
                 
-                //获取父节点
-                var parent = document.getElementById('parent'),
+                // 使用getElementById访问该div元素
+                var div = document.getElementById('target'),
                 
-                //创建新的div
-                    newDiv = document.createElement('div');
+                // 获取段落文本
+                    txt = prompt('Enter new paragraph text', 'new paragraph text'),
                 
-                newDiv.className = 'divclass';
-                newDiv.innerHTML = "<p>I'm here, I'm in the page" + i + "</p>";
-                i++;
+                // 使用getElementsByTagName和集合索引
+                // 来访问第一个段落
+                    oldPara = div.getElementsByTagName('p')[0],
                 
-                //添加到页面
-                parent.insertBefore(newDiv, document.getElementById('div1'));
+                // 创建一个文本节点
+                    txtNode = document.createTextNode(txt),
+                    
+                // 创建一个新的段落
+                    para = document.createElement('p');
+                    
+                // 给该段落附加文本，并插入新的段落
+                para.appendChild(txtNode);
+                div.insertBefore(para, oldPara);
             }
                         
         </script>
     </head>
     <body>
-        <div id="parent">
-            <div id="div1" onclick="addDiv()">
-                <p>Click me to add new element</p>
-            </div>
-        <div>
+        <div id="target">
+            <p>
+                There id a language 'little known,'<br />
+                Lovers claim it as their own.
+            </p>
+            <p>
+                Its symbols smile upon the land, <br />
+                Wrought by nature's wondrous hand;
+            </p>
+            <p>
+                And in their silent beauty speak, <br />
+                Of life and joy, to those who seek.
+            </p>
+            <p>
+                For Love Divine and sunny huors <br />
+                In the language of the flowers.
+            </p>
+        </div>
     </body>
 </html>
 
@@ -67,64 +64,54 @@ tags:  JavaScript  JavaScript经典实例
 
 ``` javascript
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>object detection</title>
-        <style type="text/css">
-            div
-            {
-                width: 300px;
-                heigth: 20px;
-                padding: 10px;
-                margin: 10px 0;
-            }
-            
-            #div1
-            {
-                background-color: #ff0;
-            }
-            
-            .divclass
-            {
-                background-color: #cfc;
-            }
-            
-        </style>
+        <title>Adding Paragraphs</title>
         <script type="text/javascript">
             window.onload = function() {
-                document.getElementById('div1').onclick = addDiv();
-            }
-            
-            function addDiv() {
                 
-                //获取父节点
-                var parent = document.getElementById('parent'),
+                // 使用getElementById访问该div元素
+                var div = document.getElementById('target'),
                 
-                //创建新的div
-                    newDiv = document.createElement('div');
+                // 获取段落文本
+                    txt = prompt('Enter new paragraph text', ''),
                 
-                newDiv.className = 'divclass';
-                newDiv.innerHTML = "<p>I'm here, I'm in the page</p>";
+                // 使用getElementsByTagName和集合索引
+                // 来访问第一个段落
+                    oldPara = div.getElementsByTagName('p')[0],
                 
-                //添加到页面
-                parent.insertBefore(newDiv, document.getElementById('div1'));
+                // 创建一个文本节点
+                    txtNode = document.createTextNode(txt),
+                    
+                // 创建一个新的段落
+                    para = document.createElement('p');
+                    
+                // 给该段落附加文本，并插入新的段落
+                para.appendChild(txtNode);
+                div.insertBefore(para, oldPara);
             }
                         
         </script>
     </head>
     <body>
-        <div id="parent">
-            <div id="div1">
-                <p>Click me to add new element</p>
-            </div>
-        <div>
+        <div id="target">
+            <p>
+                There id a language 'little known,'<br />
+                Lovers claim it as their own.
+            </p>
+            <p>
+                Its symbols smile upon the land, <br />
+                Wrought by nature's wondrous hand;
+            </p>
+            <p>
+                And in their silent beauty speak, <br />
+                Of life and joy, to those who seek.
+            </p>
+            <p>
+                For Love Divine and sunny huors <br />
+                In the language of the flowers.
+            </p>
+        </div>
     </body>
 </html>
 ``` 
-
-`insertBefore()` 方法在您指定的已有子节点之前插入新的子节点。
-提示：如果您希望创建包含文本的新列表项，请记得创建文本节点形式的文本，以便追加到 `LI` 元素中，然后向列表插入这个 `LI`。
-您也可以使用 `insertBefore` 方法插入/移动已有元素。
-
-`node.insertBefore(newnode,existingnode)`   `newnode`	`Node` 对象	必需。需要插入的节点对象。
-`existingnode`	`Node` `object`	可选。在其之前插入新节点的子节点。如果未规定，则 `insertBefore` 方法会在结尾插入 `newnode`。
