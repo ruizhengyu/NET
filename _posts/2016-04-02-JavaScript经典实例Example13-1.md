@@ -70,7 +70,7 @@ tags:  JavaScript  JavaScript经典实例
     </head>
     <body>
         <div id="a">
-            <p>A<p>
+            <p>A</p>
             <div id="b">
                 <p>B</p>
                 <div id="c">
@@ -147,7 +147,7 @@ tags:  JavaScript  JavaScript经典实例
     </head>
     <body>
         <div id="a">
-            <p>A<p>
+            <p>A</p>
             <div id="b">
                 <p>B</p>
                 <div id="c">
