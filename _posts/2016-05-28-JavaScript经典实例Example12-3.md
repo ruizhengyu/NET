@@ -72,7 +72,7 @@ tags:  JavaScript  JavaScript经典实例
                 <a href="http://stlzoo.org/">St. Louis Zoo</a>, the 
                 <a href="http://www.nps.gov/jeff/index.htm"><em>Gateway Arch</em></a>
                 , the <a href="http://www.citygardenstl.org/">City Garden</a>
-                , and the <a href="http://mdc.mo.gov/areas/cnc/powder/">Powder Valley COnservation Nature Center</a>
+                , and the <a href="http://mdc.mo.gov/areas/cnc/powder/">Powder Valley Conservation Nature Center</a>
             </p>
         </div>
     </body>
@@ -145,7 +145,7 @@ tags:  JavaScript  JavaScript经典实例
                 <a href="http://stlzoo.org/">St. Louis Zoo</a>, the 
                 <a href="http://www.nps.gov/jeff/index.htm"><em>Gateway Arch</em></a>
                 , the <a href="http://www.citygardenstl.org/">City Garden</a>
-                , and the <a href="http://mdc.mo.gov/areas/cnc/powder/">Powder Valley COnservation Nature Center</a>
+                , and the <a href="http://mdc.mo.gov/areas/cnc/powder/">Powder Valley Conservation Nature Center</a>
             </p>
         </div>
     </body>
