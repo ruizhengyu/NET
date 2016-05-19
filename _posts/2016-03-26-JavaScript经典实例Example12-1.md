@@ -33,23 +33,23 @@ tags:  JavaScript  JavaScript经典实例
             
         </style>
         <script type="text/javascript">
-        
-            var i = 1;
+            window.onload = function() {
+                document.getElementById('div1').onclick =addDiv;
+            }
             
             function addDiv() {
                 
                 //获取父节点
-                var parent = document.getElementById('parent'),
+                var parent = this.parentNode,
                 
                 //创建新的div
                     newDiv = document.createElement('div');
                 
                 newDiv.className = 'divclass';
                 newDiv.innerHTML = "<p>I'm here, I'm in the page" + i + "</p>";
-                i++;
                 
                 //添加到页面
-                parent.insertBefore(newDiv, document.getElementById('div1'));
+                parent.insertBefore(newDiv, this);
             }
                         
         </script>
