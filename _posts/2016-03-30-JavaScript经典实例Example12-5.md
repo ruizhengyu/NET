@@ -32,7 +32,7 @@ tags:  JavaScript  JavaScript经典实例
                 
             }
             
-            function pruneparagraph(parasthis){
+            function pruneparagraph(parasthis) {
                 var parent = document.getElementById('parent'),
                     blk1 = document.getElementById("result1");
                 
@@ -81,7 +81,7 @@ tags:  JavaScript  JavaScript经典实例
                 
             }
             
-            function pruneparagraph(){
+            function pruneparagraph() {
                 var parent = this.parentNode;
                 
                 parent.removeChild(this);

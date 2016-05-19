@@ -21,7 +21,7 @@ window.onload = function(){
     blk1.innerHTML = imgs.length;
     var p = document.createElement("p");
     var img = document.createElement("img");
-    img.src = "orchids4.preview.jpg";
+    img.src = "http://lovechina.xyz/assets/orchids4.preview.jpg";
     p.appendChild(img);
     
     var paras = document.getElementsByTagName('p');

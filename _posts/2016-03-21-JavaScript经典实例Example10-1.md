@@ -6,7 +6,7 @@ categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-如果脚本关闭的话，表单元素默认地设置为隐藏，如果支持脚本的话，则会显示
+如果脚本关闭的话，表单元素默认地设置为显示，如果支持脚本的话，则会隐藏
 ----------------
 
 <html xmlns="http://www.w3.org/1999/xthml">
@@ -15,35 +15,23 @@ tags:  JavaScript  JavaScript经典实例
 <script>
 //<![CDTAT[
 
-var citystore = new Array();
-citystore[0] = ['CA', 'San Francisco'];
-citystore[1] = ['CA', 'Los Angeles'];
-citystore[2] = ['CA', 'San Diego'];
-citystore[3] = ['MO', 'St. louis'];
-citystore[4] = ['MO', 'Kansas City'];
-citystore[5] = ['WA', 'Seattle'];
-citystore[6] = ['WA', 'Spokane'];
-citystore[7] = ['WA', 'Redmond'];
+var inprocess = false;
 
 window.onload = function(){
-    document.getElementById("state").onchange = filterCities;
+    document.getElementById("hidden_elements").style.display = "none";
+    
+    // 把点击事件处理程序绑定到按钮
+    var radios = document.forms[0].elements["group1"];
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].onclick = radioClicked;
+    }
 }
 
-function filterCities(){
-    var state = this.value;
-    var city = document.getElementById("cities");
-    city.options.length = 0;
-    
-    for(var i = 0; i < citystore.length; i++){
-        var st = citystore[i][0];
-        if(st == state){
-            var opt = new Option(citystore[i][1]);
-            try{
-                city.add(opt, null);
-            }catch(e){
-                city.add(opt);
-            }
-        }
+function radioClicked() {
+    if (this.value == "two") {
+        document.getElementById("hidden_elements").style.display = "block";
+    } else {
+        document.getElementById("hidden_elements").style.display = "none";
     }
 }
 
@@ -76,35 +64,23 @@ Input 3:<input type="text" id="intext3" /><br /><br />
 <script>
 //<![CDTAT[
 
-var citystore = new Array();
-citystore[0] = ['CA', 'San Francisco'];
-citystore[1] = ['CA', 'Los Angeles'];
-citystore[2] = ['CA', 'San Diego'];
-citystore[3] = ['MO', 'St. louis'];
-citystore[4] = ['MO', 'Kansas City'];
-citystore[5] = ['WA', 'Seattle'];
-citystore[6] = ['WA', 'Spokane'];
-citystore[7] = ['WA', 'Redmond'];
+var inprocess = false;
 
 window.onload = function(){
-    document.getElementById("state").onchange = filterCities;
+    document.getElementById("hidden_elements").style.display = "none";
+    
+    // 把点击事件处理程序绑定到按钮
+    var radios = document.forms[0].elements["group1"];
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].onclick = radioClicked;
+    }
 }
 
-function filterCities(){
-    var state = this.value;
-    var city = document.getElementById("cities");
-    city.options.length = 0;
-    
-    for(var i = 0; i < citystore.length; i++){
-        var st = citystore[i][0];
-        if(st == state){
-            var opt = new Option(citystore[i][1]);
-            try{
-                city.add(opt, null);
-            }catch(e){
-                city.add(opt);
-            }
-        }
+function radioClicked() {
+    if (this.value == "two") {
+        document.getElementById("hidden_elements").style.display = "block";
+    } else {
+        document.getElementById("hidden_elements").style.display = "none";
     }
 }
 

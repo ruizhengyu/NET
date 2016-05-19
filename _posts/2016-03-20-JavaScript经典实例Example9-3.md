@@ -61,10 +61,6 @@ function filterCities(){
 <select id="cities">
 </select>
 </form>
-<div id="refresh">
-<p>Click to reset example<p>
-</div>
-<div id="message"></div>
 </body>
 </html>
 
@@ -124,10 +120,6 @@ function filterCities(){
 <select id="cities">
 </select>
 </form>
-<div id="refresh">
-<p>Click to reset example<p>
-</div>
-<div id="message"></div>
 </body>
 </html>
 ``` 
