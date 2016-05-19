@@ -26,31 +26,27 @@ tags:  JavaScript  JavaScript经典实例
             window.onload = function() {
                 var paras = document.getElementsByTagName('p');
                 
-                for (var i = 4; i > -1; i--) {
-                    paras[i].onclick = pruneparagraph(paras[0]);
+                for (var i = 0; i < paras.length; i++) {
+                    paras[i].onclick = pruneparagraph;
                 }
                 
             }
             
-            function pruneparagraph(parasthis) {
-                var parent = document.getElementById('parent'),
-                    blk1 = document.getElementById("result1");
+            function pruneparagraph() {
+                var parent = this.parentNode;
                 
-                parent.removeChild(parasthis);                
-                blk1.innerHTML += '      ' + 'paras ' + document.getElementsByTagName('p').length;
+                parent.removeChild(this);
+                alert('paras ' + document.getElementsByTagName('p').length);
             }
             
         </script>
     </head>
     <body>
-        <div id="parent">
-            <p>This is paragraph one</p>
-            <p>This is paragraph two</p>
-            <p>This is paragraph three</p>
-            <p>This is paragraph four</p>
-            <p>This is paragraph five</p>
-        </div>
-        <div id="result1"></div>
+        <p>This is paragraph one</p>
+        <p>This is paragraph two</p>
+        <p>This is paragraph three</p>
+        <p>This is paragraph four</p>
+        <p>This is paragraph five</p>
     </body>
 </html>
 
@@ -76,7 +72,7 @@ tags:  JavaScript  JavaScript经典实例
                 var paras = document.getElementsByTagName('p');
                 
                 for (var i = 0; i < paras.length; i++) {
-                    paras[i].onclick = pruneparagraph();
+                    paras[i].onclick = pruneparagraph;
                 }
                 
             }
@@ -99,5 +95,3 @@ tags:  JavaScript  JavaScript经典实例
     </body>
 </html>
 ``` 
-
-源码在实际运行中出错，`Uncaught TypeError: Cannot read property 'removeChild' of undefined`。
