@@ -1,5 +1,5 @@
 ---
-date: 2016-05-29 10:26:30+00:00
+date: 2016-03-29 10:26:30+00:00
 layout: post
 title: JavaScript经典实例 示例12-4
 categories: JavaScript经典实例
@@ -11,7 +11,7 @@ tags:  JavaScript  JavaScript经典实例
 
 <html>
     <head>
-        <title>Moving Links</title>
+        <title>Sum Table Column</title>
         <script type="text/javascript">
             window.onload = function() {
                 var values = new Array(3),
@@ -65,7 +65,7 @@ tags:  JavaScript  JavaScript经典实例
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Moving Links</title>
+        <title>Sum Table Column</title>
         <script type="text/javascript">
             window.onload = function() {
                 var values = new Array(3),
