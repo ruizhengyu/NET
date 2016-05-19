@@ -59,14 +59,15 @@ tags:  JavaScript  JavaScript经典实例
             <div id="div1" onclick="addDiv()">
                 <p>Click me to add new element</p>
             </div>
-        <div>
+        </div>
     </body>
 </html>
 
+
 源码如下：
 
-
-    <!DOCTYPE html>
+``` javascript
+<!DOCTYPE html>
     <html>
     <head>
         <title>object detection</title>
@@ -117,10 +118,10 @@ tags:  JavaScript  JavaScript经典实例
             <div id="div1">
                 <p>Click me to add new element</p>
             </div>
-        <div>
+        </div>
     </body>
-    </html>
-
+</html>
+```
 
 `insertBefore()` 方法在您指定的已有子节点之前插入新的子节点。
 提示：如果您希望创建包含文本的新列表项，请记得创建文本节点形式的文本，以便追加到 `LI` 元素中，然后向列表插入这个 `LI`。
