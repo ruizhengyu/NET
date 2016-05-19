@@ -43,13 +43,13 @@ tags:  JavaScript  JavaScript经典实例
         </script>
     </head>
     <body>
-        <p id="parent">
+        <div id="parent">
             <p>This is paragraph one</p>
             <p>This is paragraph two</p>
             <p>This is paragraph three</p>
             <p>This is paragraph four</p>
             <p>This is paragraph five</p>
-        </p>
+        </div>
         <div id="result1"></div>
     </body>
 </html>
