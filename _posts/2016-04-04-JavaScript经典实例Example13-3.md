@@ -36,7 +36,7 @@ tags:  JavaScript  JavaScript经典实例
                 z-index: 10;
             }
             
-            .overlaying
+            .overlayimg
             {
                 position: absolute;
                 z-index: 11;
@@ -59,7 +59,7 @@ tags:  JavaScript  JavaScript经典实例
                 document.body.appendChild(overlay);
                 img.setAttribute('id', 'img');
                 img.src = this.getAttribute('data-larger');
-                img.setAttribute('class', 'overlaying');
+                img.setAttribute('class', 'overlayimg');
                 
                 // click to restore page
                 img.onclick = restore;
@@ -127,7 +127,7 @@ tags:  JavaScript  JavaScript经典实例
                 z-index: 10;
             }
             
-            .overlaying
+            .overlayimg
             {
                 position: absolute;
                 z-index: 11;
@@ -150,7 +150,7 @@ tags:  JavaScript  JavaScript经典实例
                 document.body.appendChild(overlay);
                 img.setAttribute('id', 'img');
                 img.src = this.getAttribute('data-larger');
-                img.setAttribute('class', 'overlaying');
+                img.setAttribute('class', 'overlayimg');
                 
                 // click to restore page
                 img.onclick = restore;
