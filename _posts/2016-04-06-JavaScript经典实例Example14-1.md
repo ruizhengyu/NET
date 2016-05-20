@@ -1,151 +1,145 @@
-
 ---
-date: 2016-04-05 14:56:30+00:00
+date: 2016-04-06 15:46:30+00:00
 layout: post
-title: JavaScript经典实例 示例13-4
+title: JavaScript经典实例 示例14-1
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-创建一个可重用的、多个标签页的应用程序
+验证表单字段的时候，提供视觉和其他提示
 ----------------
 
 <html>
     <head>
-        <title>Tabbed Pages</title>
+        <title>Validating Forms</title>
         <meta charset="utf-8" />
         <style type="text/css">
-            .tabcontainer
+            [role="alert"]
             {
+                background-color: #fcc;
+                font-weight: bold;
                 padding: 5px;
-                width: 500px;
-                margin: 20px;
+                border: 1px dashed #000;
             }
             
-            .tabnavigation ul
+            div
             {
-                padding: 0;
-                margin: 0;
-                display: none;
-            }
-            
-            .tabnavigation ul li
-            {
-                padding: 3px;
-                display: inline;
-                border: 1px solid #000;
+                margin: 10px 0;
+                padding: 5px;
+                width: 400px;
                 background-color: #fff;
-            }
-            
-            .tabnavigation ul li:hover
-            {
-                cursor: pointer;
-            }
-            
-            .tabpages
-            {
-                position: relative;
-                z-index: 2;
-                border: 1px solid #000;
-                background-color: #fff;
-            }
-            
-            .tabpage
-            {
-                margin: 0 10px;
             }
             
         </style>
         <script type="text/javascript">
-        
-            // 为每个容器显示导航
-            // 来设置显示
-            // 隐藏所有标签，但第一个变迁例外，突出显示第一个标签
             window.onload = function() {
+                document.getElementById('thirdfield').onchange = validateField;
+                document.getElementById('firstfield').onblur = mandatoryField;
+                document.getElementById('testform').onsubmit = finalCheck;
+            }
             
-                // 针对每个容器
-                var containers = document.querySelectorAll('.tabcontainer');
+            function removeAlert() {
+                var msg = document.getElementById('msg');
                 
-                for (var j = 0; j < containers.length; j++) {
-                    
-                    // 显示并隐藏元素
-                    var nav = containers[j].querySelector('.tabnavigation ul'),
-                    
-                    // 设置当前标签
-                        navitem = containers[j].querySelector('.tabnavigation ul li'),
-                        ident = navitem.id.split('_')[1],
-                        pages = containers[j].querySelectorAll('.tabpage'),
-                        tabs = containers[j].querySelectorAll('.tabnavigation ul li');
-                    
-                    nav.style.display = 'block';
-                    navitem.parentNode.setAttribute('data-current', ident);
-                    navitem.setAttribute('style', 'background-color: #f00');
-                    for (var i = 0; i < pages.length; i++) {
-                        pages[i].style.display = 'none';
-                    }
-                    
-                    for (var i = 0; i < tabs.length; i++) {
-                        tabs[i].onclick = displayPage;
-                    }
-                    
+                if (msg) {
+                    document.body.removeChild(msg);
+                }
+            
+            }
+            
+            function resetField(elem) {
+                elem.parentNode.setAttribute('style', 'background-color:#fff');
+                var valid = elem.getAttribute('aria-invalid');
+                
+                if (valid) {
+                    elem.removeAttribute('aria-invalid');
+                }
+            
+            }
+            
+            function badField(elem) {
+                elem.parentNode.setAttribute('style', 'background-color: #fee');
+                elem.setAttribute('aria-invalid', 'true');
+            }
+            
+            function generateAlert(txt) {
+                
+                // 创建新的文本和div元素，并设置ARIA和类及id
+                var txtNd = document.createTextNode(txt);
+                
+                msg = document.createElement('div');
+                msg.setAttribute('role', 'alert');
+                msg.setAttribute('id', 'msg');
+                msg.setAttribute('class', 'alert');
+                
+                // 把文本附加到div，把div附加到文档
+                msg.appendChild(txtNd);
+                document.body.appendChild(msg);
+            }
+            
+            function validateField() {
+                
+                // 删除任何已有的警告，而不管什么值
+                removeAlert();
+                
+                // 检查数字
+                if (!isNaN(parseFloat(this.value))) {
+                    resetField(this);
+                } else {
+                    badField(this);
+                    generateAlert("You entered an invalid value in Third Field.Only numeric nalues such as 105 or 3.54 are allowed")
                 }
                 
             }
             
-            // 点击标签
-            function displayPage() {
-                var current = this.parentNode.getAttribute('data-current'),
-                    ident = this.id.split('_')[1];
+            function mandatoryField() {
                 
-                document.getElementById('tabnav_' + current).setAttribute('style', 'background-color: #fff');
-                document.getElementById('tabpage_' + current).style.display = 'none';
-                this.setAttribute('style', 'background-color: #f00');
-                document.getElementById('tabpage_' + ident).style.display = 'block';
-                this.parentNode.setAttribute('data-current', ident);
+                // 删除任何已有的警告
+                removeAlert();
+                
+                // 检查值
+                if (this.value.length > 0) {
+                    resetField(this);
+                } else {
+                    badField(this);
+                    generateAlert("You must enter a value into First Field");
+                }
+
+            }
+            
+            function finalCheck() {
+                removeAlert();
+                var fields = document.querySelectorAll("[aria-invalid='true']");
+                
+                if (fields.length > 0) {
+                    generateAlert("You have incorrect fields entries that must be fixed before you can submit this form");
+                    return false;
+                }
+                
             }
             
         </script>
     </head>
     <body>
-        <div class="tabcontainer">
-            <div class="tabnavigation">
-                <ul>
-                    <li id="tabnav_1">Page One</li>
-                    <li id="tabnav_2">Page Two</li>
-                    <li id="tabnav_3">Page Three</li>
-                </ul>
+        <form id="testform">
+            <div>
+                <label for="firstfield">*First Field:</label><br />
+                <input id="firstfield" name="firstfield" type="text" aria-required="true" />
             </div>
-            <div class="tabpages">
-                <div class="tabpage" id="tabpage_1">
-                    <p>page 1</p>
-                </div>
-                <div class="tabpage" id="tabpage_2">
-                    <p>page 2</p>
-                </div>
-                <div class="tabpage" id="tabpage_3">
-                    <p>page 3</p>
-                </div>
+            <div>
+                <label for="secondfield">Second Field:</label><br />
+                <input id="secondfield" name="secondfield" type="text" />
             </div>
-        </div>
-        <div class="tabcontainer">
-            <div class="tabnavigation">
-                <ul>
-                    <li id="tabnav_4">Page Two One</li>
-                    <li id="tabnav_5">Page Two Two</li>
-                </ul>
+            <div>
+                <label for="thirdfield">Third Field (numeric):</label><br />
+                <input id="thirdfield" name="thirdfield" type="text" />
             </div>
-            <div class="tabpages">
-                <div class="tabpage" id="tabpage_4">
-                    <p>page 4</p>
-                </div>
-                <div class="tabpage" id="tabpage_5">
-                    <p>page 5</p>
-                </div>
-                <div class="tabpage" id="tabpage_6">
-                    <p>page 6</p>
-                </div>
+            <div>
+                <label for="fourthfield">Fourth Field:</label><br />
+                <input id="fourthfield" name="fourthfield" type="text" />
             </div>
-        </div>
+            <input type="submit" value="Send Data" />
+        </form>
     </body>
 </html>
 
@@ -155,140 +149,136 @@ tags:  JavaScript  JavaScript经典实例
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tabbed Pages</title>
+        <title>Validating Forms</title>
         <meta charset="utf-8" />
         <style type="text/css">
-            .tabcontainer
+            [role="alert"]
             {
+                background-color: #fcc;
+                font-weight: bold;
                 padding: 5px;
-                width: 500px;
-                margin: 20px;
+                border: 1px dashed #000;
             }
             
-            .tabnavigation ul
+            div
             {
-                padding: 0;
-                margin: 0;
-                display: none;
-            }
-            
-            .tabnavigation ul li
-            {
-                padding: 3px;
-                display: inline;
-                border: 1px solid #000;
+                margin: 10px 0;
+                padding: 5px;
+                width: 400px;
                 background-color: #fff;
-            }
-            
-            .tabnavigation ul li:hover
-            {
-                cursor: pointer;
-            }
-            
-            .tabpages
-            {
-                position: relative;
-                z-index: 2;
-                border: 1px solid #000;
-                background-color: #fff;
-            }
-            
-            .tabpage
-            {
-                margin: 0 10px;
             }
             
         </style>
         <script type="text/javascript">
-        
-            // 为每个容器显示导航
-            // 来设置显示
-            // 隐藏所有标签，但第一个变迁例外，突出显示第一个标签
             window.onload = function() {
+                document.getElementById('thirdfield').onchange = validateField;
+                document.getElementById('firstfield').onblur = mandatoryField;
+                document.getElementById('testform').onsubmit = finalCheck;
+            }
             
-                // 针对每个容器
-                var containers = document.querySelectorAll('.tabcontainer');
+            function removeAlert() {
+                var msg = document.getElementById('msg');
                 
-                for (var j = 0; j < containers.length; j++) {
-                    
-                    // 显示并隐藏元素
-                    var nav = containers[j].querySelector('.tabnavigation ul'),
-                    
-                    // 设置当前标签
-                        navitem = containers[j].querySelector('.tabnavigation ul li'),
-                        ident = navitem.id.split('_')[1],
-                        pages = containers[j].querySelectorAll('.tabpage'),
-                        tabs = containers[j].querySelectorAll('.tabnavigation ul li');
-                    
-                    nav.style.display = 'block';
-                    navitem.parentNode.setAttribute('data-current', ident);
-                    navitem.setAttribute('style', 'background-color: #f00');
-                    for (var i = 0; i < pages.length; i++) {
-                        pages[i].style.display = 'none';
-                    }
-                    
-                    for (var i = 0; i < tabs.length; i++) {
-                        tabs[i].onclick = displayPage;
-                    }
-                    
+                if (msg) {
+                    document.body.removeChild(msg);
+                }
+            
+            }
+            
+            function resetField(elem) {
+                elem.parentNode.setAttribute('style', 'background-color:#fff');
+                var valid = elem.getAttribute('aria-invalid');
+                
+                if (valid) {
+                    elem.removeAttribute('aria-invalid');
+                }
+            
+            }
+            
+            function badField(elem) {
+                elem.parentNode.setAttribute('style', 'background-color: #fee');
+                elem.setAttribute('aria-invalid', 'true');
+            }
+            
+            function generateAlert(txt) {
+                
+                // 创建新的文本和div元素，并设置ARIA和类及id
+                var txtNd = document.createTextNode(txt);
+                
+                msg = document.createElement('div');
+                msg.setAttribute('role', 'alert');
+                msg.setAttribute('id', 'msg');
+                msg.setAttribute('class', 'alert');
+                
+                // 把文本附加到div，把div附加到文档
+                msg.appendChild(txtNd);
+                document.body.appendChild(msg);
+            }
+            
+            function validateField() {
+                
+                // 删除任何已有的警告，而不管什么值
+                removeAlert();
+                
+                // 检查数字
+                if (!isNaN(parseFloat(this.value))) {
+                    resetField(this);
+                } else {
+                    badField(this);
+                    generateAlert("You entered an invalid value in Third Field.Only numeric nalues such as 105 or 3.54 are allowed")
                 }
                 
             }
             
-            // 点击标签
-            function displayPage() {
-                var current = this.parentNode.getAttribute('data-current'),
-                    ident = this.id.split('_')[1];
+            function mandatoryField() {
                 
-                document.getElementById('tabnav_' + current).setAttribute('style', 'background-color: #fff');
-                document.getElementById('tabpage_' + current).style.display = 'none';
-                this.setAttribute('style', 'background-color: #f00');
-                document.getElementById('tabpage_' + ident).style.display = 'block';
-                this.parentNode.setAttribute('data-current', ident);
+                // 删除任何已有的警告
+                removeAlert();
+                
+                // 检查值
+                if (this.value.length > 0) {
+                    resetField(this);
+                } else {
+                    badField(this);
+                    generateAlert("You must enter a value into First Field");
+                }
+
+            }
+            
+            function finalCheck() {
+                removeAlert();
+                var fields = document.querySelectorAll("[aria-invalid='true']");
+                
+                if (fields.length > 0) {
+                    generateAlert("You have incorrect fields entries that must be fixed before you can submit this form");
+                    return false;
+                }
+                
             }
             
         </script>
     </head>
     <body>
-        <div class="tabcontainer">
-            <div class="tabnavigation">
-                <ul>
-                    <li id="tabnav_1">Page One</li>
-                    <li id="tabnav_2">Page Two</li>
-                    <li id="tabnav_3">Page Three</li>
-                </ul>
+        <form id="testform">
+            <div>
+                <label for="firstfield">*First Field:</label><br />
+                <input id="firstfield" name="firstfield" type="text" aria-required="true" />
             </div>
-            <div class="tabpages">
-                <div class="tabpage" id="tabpage_1">
-                    <p>page 1</p>
-                </div>
-                <div class="tabpage" id="tabpage_2">
-                    <p>page 2</p>
-                </div>
-                <div class="tabpage" id="tabpage_3">
-                    <p>page 3</p>
-                </div>
+            <div>
+                <label for="secondfield">Second Field:</label><br />
+                <input id="secondfield" name="secondfield" type="text" />
             </div>
-        </div>
-        <div class="tabcontainer">
-            <div class="tabnavigation">
-                <ul>
-                    <li id="tabnav_4">Page Two One</li>
-                    <li id="tabnav_5">Page Two Two</li>
-                </ul>
+            <div>
+                <label for="thirdfield">Third Field (numeric):</label><br />
+                <input id="thirdfield" name="thirdfield" type="text" />
             </div>
-            <div class="tabpages">
-                <div class="tabpage" id="tabpage_4">
-                    <p>page 4</p>
-                </div>
-                <div class="tabpage" id="tabpage_5">
-                    <p>page 5</p>
-                </div>
-                <div class="tabpage" id="tabpage_6">
-                    <p>page 6</p>
-                </div>
+            <div>
+                <label for="fourthfield">Fourth Field:</label><br />
+                <input id="fourthfield" name="fourthfield" type="text" />
             </div>
-        </div>
+            <input type="submit" value="Send Data" />
+        </form>
     </body>
 </html>
 ``` 
+`onblur` 事件会在对象失去焦点时发生。
