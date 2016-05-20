@@ -115,7 +115,7 @@ tags:  JavaScript  JavaScript经典实例
             }
             
             // 将页面回复正常
-            function  () {
+            function restore() {
                 document.body.removeChild(document.getElementById('overlay'));
                 document.body.removeChild(document.getElementById('img'));
             }
@@ -135,10 +135,10 @@ tags:  JavaScript  JavaScript经典实例
     <body>
         <div id="outer">
             <p>Mouse click on image, or use kryboard to move to photo and hit ENTER to expand the photo. To close expanded photo, hit ESC or mouse click on image.</p>
-            <img src="http://lovechina.xyz/assets/dragonfly2.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly2.jpg" alt="image of common dragonfly on bright green and pink flowers"/>
-            <img src="http://lovechina.xyz/assets/dragonfly4.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly4.jpg" alt="Drak orange dragonfly on water lily"/>
-            <img src="http://lovechina.xyz/assets/dragonfly6.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly6.jpg" alt="Drak orange dragonfly on purple water lily"/>
-            <img src="http://lovechina.xyz/assets/dragonfly8.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly8.jpg" alt="Dragonfly on bright pink water lily"/>
+            <a href="http://lovechina.xyz/assets/dragonfly2.jpg"><img src="http://lovechina.xyz/assets/dragonfly2.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly2.jpg" alt="女神全智贤"/></a>
+            <a href="http://lovechina.xyz/assets/dragonfly4.jpg"><img src="http://lovechina.xyz/assets/dragonfly4.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly4.jpg" alt="女神全智贤"/></a>
+            <a href="http://lovechina.xyz/assets/dragonfly6.jpg"><img src="http://lovechina.xyz/assets/dragonfly6.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly6.jpg" alt="女神全智贤"/></a>
+            <a href="http://lovechina.xyz/assets/dragonfly8.jpg"><img src="http://lovechina.xyz/assets/dragonfly8.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly8.jpg" alt="来自星星的你"/></a>
         </div>
     </body>
 </html>
@@ -253,7 +253,7 @@ tags:  JavaScript  JavaScript经典实例
             }
             
             // 将页面回复正常
-            function  () {
+            function restore() {
                 document.body.removeChild(document.getElementById('overlay'));
                 document.body.removeChild(document.getElementById('img'));
             }
@@ -273,10 +273,10 @@ tags:  JavaScript  JavaScript经典实例
     <body>
         <div id="outer">
             <p>Mouse click on image, or use kryboard to move to photo and hit ENTER to expand the photo. To close expanded photo, hit ESC or mouse click on image.</p>
-            <img src="http://lovechina.xyz/assets/dragonfly2.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly2.jpg" alt="image of common dragonfly on bright green and pink flowers"/>
-            <img src="http://lovechina.xyz/assets/dragonfly4.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly4.jpg" alt="Drak orange dragonfly on water lily"/>
-            <img src="http://lovechina.xyz/assets/dragonfly6.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly6.jpg" alt="Drak orange dragonfly on purple water lily"/>
-            <img src="http://lovechina.xyz/assets/dragonfly8.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly8.jpg" alt="Dragonfly on bright pink water lily"/>
+            <a href="http://lovechina.xyz/assets/dragonfly2.jpg"><img src="http://lovechina.xyz/assets/dragonfly2.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly2.jpg" alt="image of common dragonfly on bright green and pink flowers"/></a>
+            <a href="http://lovechina.xyz/assets/dragonfly4.jpg"><img src="http://lovechina.xyz/assets/dragonfly4.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly4.jpg" alt="Drak orange dragonfly on water lily"/></a>
+            <a href="http://lovechina.xyz/assets/dragonfly6.jpg"><img src="http://lovechina.xyz/assets/dragonfly6.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly6.jpg" alt="Drak orange dragonfly on purple water lily"/></a>
+            <a href="http://lovechina.xyz/assets/dragonfly8.jpg"><img src="http://lovechina.xyz/assets/dragonfly8.thumbnail.jpg" data-larger="http://lovechina.xyz/assets/dragonfly8.jpg" alt="Dragonfly on bright pink water lily"/></a>
         </div>
     </body>
 </html>
