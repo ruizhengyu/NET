@@ -25,7 +25,7 @@ tags:  JavaScript  JavaScript经典实例
 //<![CDATA[
 
 function compStyle(elemId, property){
-    var elem = document.getElementById("elem");
+    var elem = document.getElementById(elemId);
     var style;
     if(window.getComputedStyle)
         style = window.getComputedStyle(elem, null).getPropertyValue(property);
@@ -78,7 +78,7 @@ window.onload = function(){
 //<![CDATA[
 
 function compStyle(elemId, property){
-    var elem = document.getElementById("elem");
+    var elem = document.getElementById(elemId);
     var style;
     if(window.getComputedStyle)
         style = window.getComputedStyle(elem, null).getPropertyValue(property);
@@ -112,8 +112,6 @@ window.onload = function(){
 </body>
 </html>
 ``` 
-
-注：原文第17行为`var elem = document.getElementById(elemId);`运行时会出错，错误为·Uncaught TypeError: Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.·没有弄明白原因，求大神告知。
 
 一个 HTMLElement 的 style 属性是一个可读可写的 CSS2Properties 对象，就好像 CSSStyleRule 对象的 style 属性一样。不过，Window.getComputedStyle() 的返回值是一个 CSS2Properties 对象，其属性是只读的。
 

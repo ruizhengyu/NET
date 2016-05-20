@@ -53,7 +53,7 @@ tags:  JavaScript  JavaScript经典实例
                     cont = prompt('Where do you want to move the cursor block?', 'A');
                     if (cont) {
                         cont = cont.toLowerCase();
-                        if (cont == 'a' || cont == 'b' || cont == 'c') {
+                        if (cont === 'a' || cont === 'b' || cont === 'c') {
                             var elem = document.getElementById(cont),
                                 pos = positionObject(elem);
                             
@@ -130,7 +130,7 @@ tags:  JavaScript  JavaScript经典实例
                     cont = prompt('Where do you want to move the cursor block?', 'A');
                     if (cont) {
                         cont = cont.toLowerCase();
-                        if (cont == 'a' || cont == 'b' || cont == 'c') {
+                        if (cont === 'a' || cont === 'b' || cont === 'c') {
                             var elem = document.getElementById(cont),
                                 pos = positionObject(elem);
                             
