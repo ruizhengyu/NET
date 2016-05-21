@@ -9,7 +9,6 @@ tags:  JavaScript  JavaScript经典实例
 将一个SVG圆放入一个div元素中
 ----------------
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Using Math method to fit a circle</title>
@@ -35,7 +34,7 @@ function compStyle(elemId, property){
 }
 window.onload = function(){
     var height = parseInt(compStyle("elem", "height"));
-    var width = parseInt(compStyle("elme", "width"));
+    var width = parseInt(compStyle("elem", "width"));
     
     var x = width / 2;
     var y = height /2;
@@ -88,7 +87,7 @@ function compStyle(elemId, property){
 }
 window.onload = function(){
     var height = parseInt(compStyle("elem", "height"));
-    var width = parseInt(compStyle("elme", "width"));
+    var width = parseInt(compStyle("elem", "width"));
     
     var x = width / 2;
     var y = height /2;
