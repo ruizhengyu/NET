@@ -70,7 +70,7 @@ Input 3:<input type="text" id="intext3" /><br /><br />
 <input type="submit" id="submitbutton" value="Send form" />
 </form>
 <div id="refresh">
-<p>Click to reset example<p>
+<p>Click to reset example</p>
 </div>
 <div id="message"></div>
 </body>
@@ -141,7 +141,7 @@ Input 3:<input type="text" id="intext3" /><br /><br />
 <input type="submit" id="submitbutton" value="Send form" />
 </form>
 <div id="refresh">
-<p>Click to reset example<p>
+<p>Click to reset example</p>
 </div>
 <div id="message"></div>
 </body>
