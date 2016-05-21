@@ -36,7 +36,7 @@ tags:  JavaScript  JavaScript经典实例
             window.onload = function() {
                 document.getElementById('div1').onclick =addDiv;
             }
-            
+            var i = 1;
             function addDiv() {
                 
                 //获取父节点
@@ -47,7 +47,7 @@ tags:  JavaScript  JavaScript经典实例
                 
                 newDiv.className = 'divclass';
                 newDiv.innerHTML = "<p>I'm here, I'm in the page" + i + "</p>";
-                
+                i++;
                 //添加到页面
                 parent.insertBefore(newDiv, this);
             }
