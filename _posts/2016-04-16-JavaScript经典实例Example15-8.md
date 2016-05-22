@@ -1,142 +1,106 @@
 ---
-date: 2016-05-21 21:26:30+00:00
+date: 2016-04-16 14:46:30+00:00
 layout: post
 title: JavaScript经典实例 示例15-8
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-非常基本的时钟方法，只需要进一步美化
+为HTML 5 video 元素提供一个定制的控制
 ----------------
 
-<?xml version="1.0"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 3">
-    <defs>
-        <style type="text/css">
-            path
-            {
-                stroke: black;
-                stroke-width: 0.02;
-                fill: none;
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meadow Video</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            function manageEvent(eventObj, event, eventHandler) {
+                if (eventObj.addEventListener) {
+                    eventObj.addEventListener(event, eventHandler, false);
+                } else if (eventObj.attachEvent) {
+                    event = 'on' + event;
+                    eventObj.attachEvent(event, eventHandler);
+                }
+                
             }
             
-            line
-            {
-                stroke-linecap: round;
+            window.onload = function() {
+                
+                // 用于按钮的事件
+                manageEvent(document.getElementById('start'), 'click', startPlayback);
+                manageEvent(document.getElementById('stop'), 'click', stopPlayback);
+                manageEvent(document.getElementById('pause'), 'click', pausePlayback);
+                
+                // 设置视频以便播放
+                var meadow = document.getElementById('meadow');
+                
+                manageEvent(meadow, 'timeupdate', reportProgress);
+                
+                // 视频备用
+                var detect = document.createElement('video');
+                
+                if (!detect.canPlayType) {
+                    document.getElementById('controls').style.display = 'none';
+                }
+                
             }
             
-            #seconds
-            {
-                stroke: red;
-                stroke-width: 0.01;
+            // 开始视频，允许停止和暂停
+            // 关闭视频
+            function startPlayback() {
+                var meadow = document.getElementById('meadow');
+                
+                meadow.play();
+                document.getElementById('pause').disabled = false;
+                document.getElementById('stop').disabled = false;
+                this.disabled = true;
             }
             
-            #minutes
-            {
-                stroke: black;
-                stroke-width: 0.03;
+            // 暂停视频，打开启动，关闭停止
+            // 关闭暂停
+            function pausePlayback() {
+                document.getElementById('meadow').pause();
+                this.disabled = true;
+                document.getElementById('start').disabled = false;
+                document.getElementById('stop').disabled = false;                                
             }
             
-            #hours
-            {
-                stroke: black;
-                stroke-width: 0.03;
+            // 停止视频，返回到0时间
+            // 打开播放，关闭暂停和停止
+            function stopPlayback() {
+                var meadow = document.getElementById('meadow');
+                
+                meadow.pause();
+                meadow.currentTime = 0;
+                document.getElementById('start').disabled = false;
+                document.getElementById('pause').disabled = false;
+                this.disabled = true;
             }
             
-        </style>
-    </defs>
-    <g transform="rotate(-90) translate(-1.3, 1.3)">
-        <circle cx="0" cy="0" r="1.0" fill="white" />
-        <line id="hours" x1="0" y1="0" x2="0.70" y2="0" stroke-width="1" />
-        <line id="minutes" x1="0" y1="0" x2="0.85" y2="0" />
-        <line id="seconds" x1="0" y1="0" x2="0.90" y2="0" />
-    </g>
-    <script>
-        var seconds = document.getElementById('seconds'),
-            minutes = document.getElementById('minutes'),
-            hours = document.getElementById('hours');
-            
-        function setClock(date) {
-            var s = (date.getSeconds() + date.getMilliseconds() / 1000) * Math.PI / 30,
-                m = date.getMinutes() * Math.PI / 30 + s / 60,
-                h = date.getHours() * Math.PI / 6 + m / 12;
-            
-            seconds.setAttribute('x2', 0.90 * Math.cos(s));
-            seconds.setAttribute('y2', 0.90 * Math.sin(s));
-            minutes.setAttribute('x2', 0.65 * Math.cos(m));
-            minutes.setAttribute('y2', 0.65 * Math.sin(m));
-            hours.setAttribute('x2', 0.40 * Math.cos(h));
-            hours.setAttribute('y2', 0.40 * Math.sin(h));
-        }
-        
-        setInterval('setClock(new Date())', 1000);
-    </script>
-</svg>
+            // 对于能过被5除的每个时间点，输出反馈
+            function reportProgress() {
+                var time = Math.round(this.currentTime),
+                    div = document.getElementById('feedback');
+                
+                div.innerHTML = time + ' seconds';
+            }
+        </script>
+    </head>
+    <body>
+        <video id="meadow" poster="http://lovechina.xyz/assets/purles.jpg" >
+            <source src="http://lovechina.xyz/assets/meadow.m4v" type="video/mp4" />            
+        </video>
+        <div id="feedback"></div>
+        <div id="controls">
+            <button id="start">Play</button>
+            <button id="stop">Stop</button>
+            <button id="pause">Pause</button>
+        </div>
+    </body>
+</html>
 
 源码如下：
 
 ``` javascript
-<?xml version="1.0"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 3">
-    <defs>
-        <style type="text/css">
-            path
-            {
-                stroke: black;
-                stroke-width: 0.02;
-                fill: none;
-            }
-            
-            line
-            {
-                stroke-linecap: round;
-            }
-            
-            #seconds
-            {
-                stroke: red;
-                stroke-width: 0.01;
-            }
-            
-            #minutes
-            {
-                stroke: black;
-                stroke-width: 0.03;
-            }
-            
-            #hours
-            {
-                stroke: black;
-                stroke-width: 0.03;
-            }
-            
-        </style>
-    </defs>
-    <g transform="rotate(-90) translate(-1.3, 1.3)">
-        <circle cx="0" cy="0" r="1.0" fill="white" />
-        <line id="hours" x1="0" y1="0" x2="0.70" y2="0" stroke-width="1" />
-        <line id="minutes" x1="0" y1="0" x2="0.85" y2="0" />
-        <line id="seconds" x1="0" y1="0" x2="0.90" y2="0" />
-    </g>
-    <script>
-        var seconds = document.getElementById('seconds'),
-            minutes = document.getElementById('minutes'),
-            hours = document.getElementById('hours');
-            
-        function setClock(date) {
-            var s = (date.getSeconds() + date.getMilliseconds() / 1000) * Math.PI / 30,
-                m = date.getMinutes() * Math.PI / 30 + s / 60,
-                h = date.getHours() * Math.PI / 6 + m / 12;
-            
-            seconds.setAttribute('x2', 0.90 * Math.cos(s));
-            seconds.setAttribute('y2', 0.90 * Math.sin(s));
-            minutes.setAttribute('x2', 0.65 * Math.cos(m));
-            minutes.setAttribute('y2', 0.65 * Math.sin(m));
-            hours.setAttribute('x2', 0.40 * Math.cos(h));
-            hours.setAttribute('y2', 0.40 * Math.sin(h));
-        }
-        
-        setInterval('setClock(new Date())', 1000);
-    </script>
-</svg>
 ``` 
