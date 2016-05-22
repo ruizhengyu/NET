@@ -89,7 +89,7 @@ tags:  JavaScript  JavaScript经典实例
     </head>
     <body>
         <video id="meadow" poster="http://lovechina.xyz/assets/purles.jpg" >
-            <source src="http://lovechina.xyz/assets/meadow.m4v" type="video/mp4" />            
+            <source src="http://lovechina.xyz/assets/meadow.TS" type="video/MPEG2" />            
         </video>
         <div id="feedback"></div>
         <div id="controls">
