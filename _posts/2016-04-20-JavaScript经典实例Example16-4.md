@@ -1,7 +1,7 @@
 ---
-date: 2016-04-19 20:16:30+00:00
+date: 2016-04-20 20:16:30+00:00
 layout: post
-title: JavaScript经典实例 示例16-3
+title: JavaScript经典实例 示例16-4
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
