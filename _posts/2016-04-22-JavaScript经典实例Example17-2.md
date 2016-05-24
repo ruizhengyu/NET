@@ -7,7 +7,8 @@ tags:  JavaScript  JavaScript经典实例
 ---
 测试示例17-1中的对象的方法的JsUnit测试页面
 ----------------
-
+运行结果如下图
+[![ ](/assets/Example 17-2.png)](/assets/Example 17-2.png)
 
 源码如下：
 
