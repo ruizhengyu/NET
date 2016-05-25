@@ -8,19 +8,19 @@ tags:  JavaScript  JavaScript经典实例
 使用新的插件的Web页面和应用程序
 ----------------
 
-<!DOCTYPE html>
 <html>
     <head>
         <style>
             #test
             {
-               background-color: #00f;
-               width: 500px;
-               padding: 10px;
-               color: #fff;
-               font-weight: bold;
-               font-size: larger;               
+                background-color: #00f;
+                width: 500px;
+                padding: 10px;
+                color: #fff;
+                font-weight: bold;
+                font-size: larger;               
             }
+            
         </style>
         <script type="text/javascript" src="/assets/jquery-2.2.4.js"></script>
         <script type="text/javascript" src="/assets/basic.js"></script>
@@ -48,13 +48,14 @@ tags:  JavaScript  JavaScript经典实例
         <style>
             #test
             {
-               background-color: #00f;
-               width: 500px;
-               padding: 10px;
-               color: #fff;
-               font-weight: bold;
-               font-size: larger;               
+                background-color: #00f;
+                width: 500px;
+                padding: 10px;
+                color: #fff;
+                font-weight: bold;
+                font-size: larger;               
             }
+            
         </style>
         <script type="text/javascript" src="jquery-2.2.4.js"></script>
         <script type="text/javascript" src="basic.js"></script>
