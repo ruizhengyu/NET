@@ -5,7 +5,7 @@ title: JavaScript经典实例 示例16-2
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
-实例化一个新的对象，相加其值，并扩展该对象
+展示JavaScript中的对象继承
 ----------------
 
 <html>
