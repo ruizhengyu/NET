@@ -1,5 +1,5 @@
 ---
-date: 2016-04-30 14:26:30+00:00
+date: 2016-04-30 15:56:30+00:00
 layout: post
 title: JavaScript经典实例 示例19-3
 categories: JavaScript经典实例
@@ -101,7 +101,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` php
+``` html
 <!DOCTYPE html>
 <html>
     <head>
