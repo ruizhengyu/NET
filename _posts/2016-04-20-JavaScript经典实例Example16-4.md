@@ -66,7 +66,7 @@ Function.bind用于定时器的用法展示
 
 源码如下：
 
-``` javascript
+``` html
 <!DOCTYPE html>
 <html>
     <head>

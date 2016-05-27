@@ -64,7 +64,7 @@ function processClick(evt){
 
 源码如下：
 
-``` javascript
+``` html
 <!DOCTYPE html>
 <head>
 <title>Filtering Input</title>

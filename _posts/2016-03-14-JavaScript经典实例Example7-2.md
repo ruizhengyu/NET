@@ -88,7 +88,7 @@ function clickBoxTwo(evt){
 
 源码如下：
 
-``` javascript
+``` html
 <!DOCTYPE html>
 <head>
 <title>Prevent Propagation</title>

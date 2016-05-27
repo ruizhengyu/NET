@@ -43,7 +43,7 @@ window.onload = function(){
 
 源码如下：
 
-``` javascript
+``` html
 <!DOCTYPE html>
 <head>
 <title>Looping and Splicing</title>

@@ -51,7 +51,7 @@ function stopStartElement(){
 
 源码如下：
 
-``` javascript
+``` html
 <!DOCTYPE html>
 <head>
 <title>interval and anonymous function</title>

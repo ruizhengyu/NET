@@ -66,7 +66,7 @@ window.onload = function(){
 
 源码如下：
 
-``` javascript
+``` html
 <!DOCTYPE html>
 <html xmls="http://ww.w3.org/1999/xhtml">
 <head>

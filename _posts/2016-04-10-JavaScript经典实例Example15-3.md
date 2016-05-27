@@ -35,7 +35,7 @@ SVG文件中的JavaScript的展示
 
 源码如下：
 
-``` javascript
+``` html
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
     <script type="text/javascript">

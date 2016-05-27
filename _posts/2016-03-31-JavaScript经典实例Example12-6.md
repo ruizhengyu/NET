@@ -95,7 +95,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` javascript
+``` html
 <!DOCTYPE html>
 <html>
     <head>
