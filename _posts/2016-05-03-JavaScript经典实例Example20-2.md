@@ -1,11 +1,11 @@
 ---
-date: 2016-05-02 19:46:30+00:00
+date: 2016-05-03 20:26:30+00:00
 layout: post
-title: JavaScript经典实例 示例20-1
+title: JavaScript经典实例 示例20-2
 categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
-使用URL和查询字符串来保留状态
+展示cookie
 ----------------
 
 <html dir="ltr" lang="en-US">
