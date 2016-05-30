@@ -28,28 +28,28 @@ th, td { vertical-align: top; }          /* Don't center table cells */
   of JavaScript code to be executed when the user enters data or clicks.
 -->
 <table style="width: 800px; height: 300px;">
-  <tr><th>Enter Loan Data:</th>
-      <td></td>
-      <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
-  <tr><td>Amount of the loan ($):</td>
-      <td><input id="amount" onchange="calculate();"/></td>
+  <tr><th style="width: 210px;">Enter Loan Data:</th>
+      <td style="width: 155px;"></td>
+      <th style="width: 488px;">Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
+  <tr><td style="width: 210px;">Amount of the loan ($):</td>
+      <td style="width: 155px;"><input id="amount" onchange="calculate();"/></td>
       <td rowspan=8>
          <canvas id="graph" width="400" height="250"></canvas></td></tr>
-  <tr><td>Annual interest (%):</td>
-      <td><input id="apr" onchange="calculate();"/></td></tr>
-  <tr><td>Repayment period (years):</td>
-      <td><input id="years" onchange="calculate();"/></td></tr>
-  <tr><td>Zipcode (to find lenders):</td>
-      <td><input id="zipcode" onchange="calculate();"/></td></tr>
-  <tr><th>Approximate Payments:</th>
+  <tr><td style="width: 210px;">Annual interest (%):</td>
+      <td style="width: 155px;"><input id="apr" onchange="calculate();"/></td></tr>
+  <tr><td style="width: 210px;">Repayment period (years):</td>
+      <td style="width: 155px;"><input id="years" onchange="calculate();"/></td></tr>
+  <tr><td style="width: 210px;">Zipcode (to find lenders):</td>
+      <td style="width: 155px;"><input id="zipcode" onchange="calculate();"/></td></tr>
+  <tr><th style="width: 210px;">Approximate Payments:</th>
       <td><button onclick="calculate();">Calculate</button></td></tr>
-  <tr><td>Monthly payment:</td>
-      <td>$<span class="output" id="payment"></span></td></tr>
-  <tr><td>Total payment:</td>
-      <td>$<span class="output" id="total"></span></td></tr>
-  <tr><td>Total interest:</td>
-      <td>$<span class="output" id="totalinterest"></span></td></tr>
-  <tr><th>Sponsors:</th><td  colspan=2>
+  <tr><td style="width: 210px;">Monthly payment:</td>
+      <td style="width: 155px;">$<span class="output" id="payment"></span></td></tr>
+  <tr><td style="width: 210px;">Total payment:</td>
+      <td style="width: 155px;">$<span class="output" id="total"></span></td></tr>
+  <tr><td style="width: 210px;">Total interest:</td>
+      <td style="width: 155px;">$<span class="output" id="totalinterest"></span></td></tr>
+  <tr><th style="width: 210px;">Sponsors:</th><td  colspan=2 style="width: 645px;">
     Apply for your loan with one of these fine lenders:
     <div id="lenders"></div></td></tr>
 </table>
