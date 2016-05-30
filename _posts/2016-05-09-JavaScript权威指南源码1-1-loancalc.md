@@ -27,7 +27,7 @@ th, td { vertical-align: top; }          /* Don't center table cells */
   elements define "onchange" or "onclick" event handlers. These specify strings
   of JavaScript code to be executed when the user enters data or clicks.
 -->
-<table>
+<table style="width: 800px; height: 300px;">
   <tr><th>Enter Loan Data:</th>
       <td></td>
       <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
