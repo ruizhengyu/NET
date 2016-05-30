@@ -7,7 +7,7 @@ tags:  JavaScript  JavaScript权威指南
 ---
 基于JavaScript实现的贷款计算器
 ----------------
-
+ 
 <html>
 <head>
 <title>JavaScript Loan Calculator</title>
@@ -32,15 +32,15 @@ th, td { vertical-align: top; }          /* Don't center table cells */
       <td></td>
       <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
   <tr><td>Amount of the loan ($):</td>
-      <td><input id="amount" onchange="calculate();"></td>
+      <td><input id="amount" onchange="calculate();"/></td>
       <td rowspan=8>
          <canvas id="graph" width="400" height="250"></canvas></td></tr>
   <tr><td>Annual interest (%):</td>
-      <td><input id="apr" onchange="calculate();"></td></tr>
+      <td><input id="apr" onchange="calculate();"/></td></tr>
   <tr><td>Repayment period (years):</td>
-      <td><input id="years" onchange="calculate();"></td></tr>
+      <td><input id="years" onchange="calculate();"/></td></tr>
   <tr><td>Zipcode (to find lenders):</td>
-      <td><input id="zipcode" onchange="calculate();"></td></tr>
+      <td><input id="zipcode" onchange="calculate();"/></td></tr>
   <tr><th>Approximate Payments:</th>
       <td><button onclick="calculate();">Calculate</button></td></tr>
   <tr><td>Monthly payment:</td>
@@ -302,15 +302,15 @@ th, td { vertical-align: top; }          /* Don't center table cells */
       <td></td>
       <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
   <tr><td>Amount of the loan ($):</td>
-      <td><input id="amount" onchange="calculate();"></td>
+      <td><input id="amount" onchange="calculate();"/></td>
       <td rowspan=8>
          <canvas id="graph" width="400" height="250"></canvas></td></tr>
   <tr><td>Annual interest (%):</td>
-      <td><input id="apr" onchange="calculate();"></td></tr>
+      <td><input id="apr" onchange="calculate();"/></td></tr>
   <tr><td>Repayment period (years):</td>
-      <td><input id="years" onchange="calculate();"></td></tr>
+      <td><input id="years" onchange="calculate();"/></td></tr>
   <tr><td>Zipcode (to find lenders):</td>
-      <td><input id="zipcode" onchange="calculate();"></td></tr>
+      <td><input id="zipcode" onchange="calculate();"/></td></tr>
   <tr><th>Approximate Payments:</th>
       <td><button onclick="calculate();">Calculate</button></td></tr>
   <tr><td>Monthly payment:</td>
