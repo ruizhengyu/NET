@@ -7,7 +7,7 @@ tags:  JavaScript  JavaScript权威指南
 ---
 基于JavaScript实现的贷款计算器
 ----------------
- 
+
 <html>
 <head>
 <title>JavaScript Loan Calculator</title>
@@ -38,9 +38,9 @@ th, td { vertical-align: top; }          /* Don't center table cells */
   <tr><td>Annual interest (%):</td>
       <td><input id="apr" onchange="calculate();"></td></tr>
   <tr><td>Repayment period (years):</td>
-      <td><input id="years" onchange="calculate();"></td>
+      <td><input id="years" onchange="calculate();"></td></tr>
   <tr><td>Zipcode (to find lenders):</td>
-      <td><input id="zipcode" onchange="calculate();"></td>
+      <td><input id="zipcode" onchange="calculate();"></td></tr>
   <tr><th>Approximate Payments:</th>
       <td><button onclick="calculate();">Calculate</button></td></tr>
   <tr><td>Monthly payment:</td>
@@ -273,7 +273,6 @@ function chart(principal, interest, monthly, payments) {
 </script>
 </body>
 </html>
-
 
 源码如下：
 
@@ -309,9 +308,9 @@ th, td { vertical-align: top; }          /* Don't center table cells */
   <tr><td>Annual interest (%):</td>
       <td><input id="apr" onchange="calculate();"></td></tr>
   <tr><td>Repayment period (years):</td>
-      <td><input id="years" onchange="calculate();"></td>
+      <td><input id="years" onchange="calculate();"></td></tr>
   <tr><td>Zipcode (to find lenders):</td>
-      <td><input id="zipcode" onchange="calculate();"></td>
+      <td><input id="zipcode" onchange="calculate();"></td></tr>
   <tr><th>Approximate Payments:</th>
       <td><button onclick="calculate();">Calculate</button></td></tr>
   <tr><td>Monthly payment:</td>
@@ -544,5 +543,4 @@ function chart(principal, interest, monthly, payments) {
 </script>
 </body>
 </html>
-
 ``` 
