@@ -33,7 +33,7 @@ th, td { vertical-align: top; }          /* Don't center table cells */
       <th style="width: 488px;">Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
   <tr><td style="width: 210px;">Amount of the loan ($):</td>
       <td style="width: 155px;"><input id="amount" onchange="calculate();"/></td>
-      <td rowspan=8>
+      <td rowspan="8">
          <canvas id="graph" width="400" height="250"></canvas></td></tr>
   <tr><td style="width: 210px;">Annual interest (%):</td>
       <td style="width: 155px;"><input id="apr" onchange="calculate();"/></td></tr>
@@ -49,7 +49,7 @@ th, td { vertical-align: top; }          /* Don't center table cells */
       <td style="width: 155px;">$<span class="output" id="total"></span></td></tr>
   <tr><td style="width: 210px;">Total interest:</td>
       <td style="width: 155px;">$<span class="output" id="totalinterest"></span></td></tr>
-  <tr><th style="width: 210px;">Sponsors:</th><td  colspan=2 style="width: 645px;">
+  <tr><th style="width: 210px;">Sponsors:</th><td  colspan="2" style="width: 645px;">
     Apply for your loan with one of these fine lenders:
     <div id="lenders"></div></td></tr>
 </table>
@@ -303,7 +303,7 @@ th, td { vertical-align: top; }          /* Don't center table cells */
       <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
   <tr><td>Amount of the loan ($):</td>
       <td><input id="amount" onchange="calculate();"/></td>
-      <td rowspan=8>
+      <td rowspan="8">
          <canvas id="graph" width="400" height="250"></canvas></td></tr>
   <tr><td>Annual interest (%):</td>
       <td><input id="apr" onchange="calculate();"/></td></tr>
@@ -319,7 +319,7 @@ th, td { vertical-align: top; }          /* Don't center table cells */
       <td>$<span class="output" id="total"></span></td></tr>
   <tr><td>Total interest:</td>
       <td>$<span class="output" id="totalinterest"></span></td></tr>
-  <tr><th>Sponsors:</th><td  colspan=2>
+  <tr><th>Sponsors:</th><td  colspan="2">
     Apply for your loan with one of these fine lenders:
     <div id="lenders"></div></td></tr>
 </table>
