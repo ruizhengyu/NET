@@ -39,7 +39,7 @@ tags:  JavaScript  JavaScript经典实例
                     str2 = '';
                 
                 for (var i = 0; i < t.length; i++) {
-                    str2 = str2 + t[i].toSting().replace(/</g, '&lt;').replace(/>/g, '&gt;') + '<br />';
+                    str2 = str2 + t[i].toString().replace(/</g, '&lt;').replace(/>/g, '&gt;') + '<br />';
                 }
                 
                 document.getElementById('result2').innerHTML = str2;
@@ -102,7 +102,7 @@ tags:  JavaScript  JavaScript经典实例
                     str2 = '';
                 
                 for (var i = 0; i < t.length; i++) {
-                    str2 = str2 + t[i].toSting().replace(/</g, '&lt;').replace(/>/g, '&gt;') + '<br />';
+                    str2 = str2 + t[i].toString().replace(/</g, '&lt;').replace(/>/g, '&gt;') + '<br />';
                 }
                 
                 document.getElementById('result2').innerHTML = str2;

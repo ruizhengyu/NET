@@ -32,13 +32,13 @@ th, td { vertical-align: top; }          /* Don't center table cells */
       <td style="width: 155px;"></td>
       <th style="width: 488px;">Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
   <tr><td style="width: 210px;">Amount of the loan ($):</td>
-      <td style="width: 155px;"><input id="amount" onchange="calculate();"/></td>
+      <td style="width: 155px;"><input id="amount" onchange="calculate();" value="100000" /></td>
       <td rowspan="8">
          <canvas id="graph" width="400" height="250"></canvas></td></tr>
   <tr><td style="width: 210px;">Annual interest (%):</td>
-      <td style="width: 155px;"><input id="apr" onchange="calculate();"/></td></tr>
+      <td style="width: 155px;"><input id="apr" onchange="calculate();" value="5"/></td></tr>
   <tr><td style="width: 210px;">Repayment period (years):</td>
-      <td style="width: 155px;"><input id="years" onchange="calculate();"/></td></tr>
+      <td style="width: 155px;"><input id="years" onchange="calculate();" value="30"/></td></tr>
   <tr><td style="width: 210px;">Zipcode (to find lenders):</td>
       <td style="width: 155px;"><input id="zipcode" onchange="calculate();"/></td></tr>
   <tr><th style="width: 210px;">Approximate Payments:</th>
