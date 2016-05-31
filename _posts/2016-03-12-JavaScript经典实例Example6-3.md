@@ -59,7 +59,8 @@ window.onload = function(){
 <p>content</p>
 </body>
 </html>
-
+运行结果如下图
+[![ ](/assets/2016-04-22-JavaScript经典实例Example6-3.png)](/assets/2016-04-22-JavaScript经典实例Example6-3.png)
 源码如下：
 
 ``` html
