@@ -140,6 +140,7 @@ window.onload = function() {
         document.getElementById("years").value = localStorage.loan_years;
         document.getElementById("zipcode").value = localStorage.loan_zipcode;
     }
+    calculate();
 };
 
 // Pass the user's input to a server-side script which can (in theory) return
