@@ -1,5 +1,5 @@
 ---
-date: 2016-02-27 13:44:30+00:00
+date: 2016-02-28 13:44:30+00:00
 layout: post
 title: JavaScript经典实例 示例2-1
 categories: JavaScript经典实例
