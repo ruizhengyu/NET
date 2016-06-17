@@ -2,8 +2,8 @@
 date: 2016-06-16 14:44:30+00:00
 layout: post
 title: C# 连接 Oracle 的几种方式
-categories: c#
-tags:  c#
+categories: Oracle C#
+tags:  Oracle C#
 ---
 
 一：通过System.Data.OracleClient(需要安装Oracle客户端并配置tnsnames.ora)
