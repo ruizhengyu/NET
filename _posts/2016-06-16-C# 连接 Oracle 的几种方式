@@ -158,3 +158,24 @@ finally
 {
     conn.Close();
 }
+
+方式1：直接利用.NET的oracle驱动连接
+安装Oracle客户端驱动包
+找到服务器端安装路径:E:oracleproduct10.2.0db_1NETWORKADMIN下tnsnames.ora，把该文件覆盖客户端驱动目下该文件
+配置客户端驱动
+1、打开数据源管理
+2、选择系统DSN，点击[添加]
+3、弹出的界面中选择Oracle in OraDB10g_1驱动，弹出Oracle ODBC  Driver  Configuration界面
+4、填写四个数据项Data Source Name    TNS  Services Name  User ID
+其中TNS Servers Name指的是服务器端设置服务名称
+这个部分可以省略
+设置完成之后确定
+引用System.data.oracleclient;
+复制代码 代码如下:
+
+ using System.data.oracleclient;
+ string oradb = "Data Source=water;User Id=modis;Password=modis;Integrated Security=no";
+ OracleConnection conn = new OracleConnection(oradb);
+ conn.Open();
+
+（我的环境为VS2005，oracle数据源连接只支持到10g以下。）
