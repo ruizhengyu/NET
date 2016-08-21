@@ -5,7 +5,7 @@ title: JavaScript经典实例 源码9-5-quacks
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
 ---
-+++++++++++
+利用鸭式辩型实现的函数
 ----------------
 
 源码如下：

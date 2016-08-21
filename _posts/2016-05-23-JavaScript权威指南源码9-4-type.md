@@ -5,7 +5,7 @@ title: JavaScript经典实例 源码9-4-type
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
 ---
-+++++++++++
+可以判断值的类型的type()函数
 ----------------
 
 源码如下：

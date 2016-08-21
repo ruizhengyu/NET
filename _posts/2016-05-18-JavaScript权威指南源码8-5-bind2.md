@@ -5,7 +5,7 @@ title: JavaScript经典实例 源码8-5-bind2
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
 ---
-%%%%%%%%%%%
+ECMAScript3版本的Function.bind()方法
 ----------------
 
 源码如下：

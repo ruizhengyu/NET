@@ -5,7 +5,7 @@ title: JavaScript经典实例 源码9-1-range2
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
 ---
-++++++++++++
+一个简单的JavaScript类
 ----------------
 
 源码如下：

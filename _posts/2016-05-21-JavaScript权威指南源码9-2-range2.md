@@ -5,7 +5,7 @@ title: JavaScript经典实例 源码9-2-range2
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
 ---
-+++++++++++
+使用构造函数来定义“范围类”
 ----------------
 
 源码如下：

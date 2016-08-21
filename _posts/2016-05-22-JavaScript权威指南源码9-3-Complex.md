@@ -5,7 +5,7 @@ title: JavaScript经典实例 源码9-3-Complex
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
 ---
-+++++++++++
+Complex.js：表示复数的类
 ----------------
 
 源码如下：

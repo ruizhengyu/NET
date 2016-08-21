@@ -5,7 +5,7 @@ title: JavaScript经典实例 源码8-4-addPrivateProperty
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
 ---
-**************
+利用闭包实现的私有属性存取器方法
 ----------------
 
 源码如下：
