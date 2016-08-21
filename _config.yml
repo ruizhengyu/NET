@@ -2,8 +2,6 @@
 
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
-markdown: kramdown
-permalink: /:title/
 exclude: ["README.md"] # files to exclude
 rouge: highlighter
 encoding: utf-8
