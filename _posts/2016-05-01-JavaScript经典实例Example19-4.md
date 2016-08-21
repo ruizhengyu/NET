@@ -20,9 +20,9 @@ tags:  JavaScript  JavaScript经典实例
                 margin: 20px;
             }
         </style>
-        <script type="text/javascript" src="/assets/json2.js"></script>
-        <script type="text/javascript" src="/assets/jquery-2.2.4.js"></script>
-        <script type="text/javascript" src="/assets/jquery.rdfquery.rdfa-1.0.js"></script>
+        <script type="text/javascript" src="/assets/media/image/json2.js"></script>
+        <script type="text/javascript" src="/assets/media/image/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="/assets/media/image/jquery.rdfquery.rdfa-1.0.js"></script>
         <script type="text/javascript">
             window.onload = function() {
                 var j = $('#biblio').rdf()
@@ -83,9 +83,9 @@ tags:  JavaScript  JavaScript经典实例
                 margin: 20px;
             }
         </style>
-        <script type="text/javascript" src="/assets/json2.js"></script>
-        <script type="text/javascript" src="/assets/jquery-2.2.4.js"></script>
-        <script type="text/javascript" src="/assets/jquery.rdfquery.rdfa-1.0.js"></script>
+        <script type="text/javascript" src="/assets/media/image/json2.js"></script>
+        <script type="text/javascript" src="/assets/media/image/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="/assets/media/image/jquery.rdfquery.rdfa-1.0.js"></script>
         <script type="text/javascript">
             window.onload = function() {
                 var j = $('#biblio').rdf()
