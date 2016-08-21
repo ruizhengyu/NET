@@ -628,8 +628,8 @@
 .fa-phone-square:before {
   content: "\f098";
 }
-.fa-twitter:before {
-  content: "\f099";
+.fa-wechat:before {
+  content: "\f1d7";
 }
 .fa-facebook:before {
   content: "\f09a";
@@ -1217,8 +1217,8 @@
 .fa-stack-overflow:before {
   content: "\f16c";
 }
-.fa-instagram:before {
-  content: "\f16d";
+.fa-qq:before {
+  content: "\f1d6";
 }
 .fa-flickr:before {
   content: "\f16e";
