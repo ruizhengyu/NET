@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 // range.js: A class representing a range of values.  
 
 // This is a factory function that returns a new range object.
@@ -49,4 +49,4 @@ var r = range(1,3);      // Create a range object
 r.includes(2);           // => true: 2 is in the range
 r.foreach(console.log);  // Prints 1 2 3
 console.log(r);          // Prints (1...3)
-{% endhighlight %}
+``` 

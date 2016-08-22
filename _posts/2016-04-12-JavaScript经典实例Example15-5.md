@@ -15,7 +15,7 @@ tags:  JavaScript  JavaScript经典实例
         <meta charset="utf-8" />
     </head>
     <body>
-        <object id="object" data="http://lovechina.xyz/assets/media/image/media/image/rect.svg" style="padding: 20px; width: 600px; height: 600px;">
+        <object id="object" data="http://lovechina.xyz/assets/media/image/rect.svg" style="padding: 20px; width: 600px; height: 600px;">
             <p>No SVG support</p>
         </object>
         <script type="text/javascript">
@@ -71,7 +71,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html>
     <head>
@@ -79,7 +79,7 @@ tags:  JavaScript  JavaScript经典实例
         <meta charset="utf-8" />
     </head>
     <body>
-        <object id="object" data="http://lovechina.xyz/assets/media/image/media/image/rect.svg" style="padding: 20px; width: 600px; height: 600px;">
+        <object id="object" data="http://lovechina.xyz/assets/media/image/rect.svg" style="padding: 20px; width: 600px; height: 600px;">
             <p>No SVG support</p>
         </object>
         <script type="text/javascript">
@@ -132,4 +132,4 @@ tags:  JavaScript  JavaScript经典实例
         </script>
     </body>
 </html>
-{% endhighlight %}
+``` 

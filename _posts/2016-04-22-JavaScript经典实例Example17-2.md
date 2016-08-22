@@ -8,11 +8,11 @@ tags:  JavaScript  JavaScript经典实例
 测试示例17-1中的对象的方法的JsUnit测试页面
 ----------------
 运行结果如下图
-[![ ](/assets/media/image/media/image/Example 17-2.png)](/assets/media/image/media/image/Example 17-2.png)
+[![ ](/assets/media/image/Example 17-2.png)](/assets/media/image/Example 17-2.png)
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,6 +48,6 @@ tags:  JavaScript  JavaScript经典实例
         <p>Running tests of test.js. View source to see tests.
     </body>
 </html>
-{% endhighlight %}
+``` 
 
-JUnit测试软件下载：[下载地址](/assets/media/image/media/image/jsunit2_2.zip)
+JUnit测试软件下载：[下载地址](/assets/media/image/jsunit2_2.zip)

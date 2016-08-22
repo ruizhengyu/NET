@@ -277,7 +277,7 @@ function chart(principal, interest, monthly, payments) {
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>   
 <html>
 <head>
@@ -544,4 +544,4 @@ function chart(principal, interest, monthly, payments) {
 </script>
 </body>
 </html>
-{% endhighlight %}
+``` 

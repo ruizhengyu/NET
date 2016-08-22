@@ -35,7 +35,7 @@ window.onload = function(){
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <head>
 <title>Example 1-1</title>
@@ -68,7 +68,7 @@ window.onload = function(){
 </div>
 </body>
 </html>
-{% endhighlight %}
+``` 
 
 **`JavaScript split()` 方法**
 
@@ -78,9 +78,9 @@ split() 方法用于把一个字符串分割成字符串数组。
 
 语法
 
-{% highlight html linenos %}
+``` html
 stringObject.split(separator,howmany)
-{% endhighlight %}
+``` 
 
 | 参数	        |                      描述 				                           | 
 | separator     |必需。字符串或正则表达式，从该参数指定的地方分割 stringObject。                  |
@@ -105,9 +105,9 @@ stringObject.split(separator,howmany)
 prompt() 方法用于显示可提示用户进行输入的对话框。
 
 语法
-{% highlight html linenos %}
+``` html
 prompt(text,defaultText)
-{% endhighlight %}
+``` 
 
 | 参数	        |                      描述 				        	| 
 | text          | 可选。要在对话框中显示的纯文本（而不是 HTML 格式的文本）。    	|

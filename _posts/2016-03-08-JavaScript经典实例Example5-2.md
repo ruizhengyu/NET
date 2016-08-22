@@ -43,7 +43,7 @@ window.onload = function(){
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <head>
 <title>Looping and Splicing</title>
@@ -69,4 +69,4 @@ alert(charSets);
 <body>
 </body>
 </html>
-{% endhighlight %}
+``` 

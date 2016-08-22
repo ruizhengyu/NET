@@ -54,7 +54,7 @@ function checkVals(elemArray){
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
@@ -98,4 +98,4 @@ function checkVals(elemArray){
 <div id="result"></div>
 </body>
 </html>
-{% endhighlight %}
+``` 

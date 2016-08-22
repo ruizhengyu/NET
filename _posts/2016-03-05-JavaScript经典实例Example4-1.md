@@ -68,7 +68,7 @@ window.onload = function(){
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -125,7 +125,7 @@ window.onload = function(){
 </table>
 </body>
 </html>
-{% endhighlight %}
+``` 
 
 querySelectorAll：return a NodeList containing all of the matching Element nodes within the node’s subtrees, in document order. If there are no such nodes, the method must return an empty NodeList. （按文档顺序返回指定元素节点的子树中匹配选择器的元素集合，如果没有匹配返回空集合）
 

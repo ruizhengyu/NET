@@ -60,7 +60,7 @@ window.onload = function(){
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -110,7 +110,7 @@ window.onload = function(){
 </div>
 </body>
 </html>
-{% endhighlight %}
+``` 
 
 一个 HTMLElement 的 style 属性是一个可读可写的 CSS2Properties 对象，就好像 CSSStyleRule 对象的 style 属性一样。不过，Window.getComputedStyle() 的返回值是一个 CSS2Properties 对象，其属性是只读的。
 

@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 // Web Worker线程，反转数组
 onmessage = function(event) {
 
@@ -24,4 +24,4 @@ onmessage = function(event) {
    // 向主应用程序返回最终的字符串
    postMessage(str);
 };
-{% endhighlight %}
+``` 

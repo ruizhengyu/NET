@@ -10,7 +10,7 @@ JavaScript中的枚举类型
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 // This function creates a new enumerated type.  The argument object specifies
 // the names and values of each instance of the class. The return value
 // is a constructor function that identifies the new class.  Note, however
@@ -48,4 +48,4 @@ function enumeration(namesToValues) {
     // Return the constructor that identifies the new type
     return enumeration;
 }
-{% endhighlight %}
+``` 

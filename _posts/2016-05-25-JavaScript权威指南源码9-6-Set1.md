@@ -10,7 +10,7 @@ Set.js：值的任意组合
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 function Set() {          // This is the constructor
     this.values = {};     // The properties of this object hold the set
     this.n = 0;           // How many values are in the set
@@ -83,4 +83,4 @@ Set._v2s = function(val) {
     }
 };
 Set._v2s.next = 100;    // Start assigning object ids at this value.
-{% endhighlight %}
+``` 

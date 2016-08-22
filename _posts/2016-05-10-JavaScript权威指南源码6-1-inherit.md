@@ -12,7 +12,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 // inherit() returns a newly created object that inherits properties from the
 // prototype object p.  It uses the ECMAScript 5 function Object.create() if
 // it is defined, and otherwise falls back to an older technique.
@@ -26,4 +26,4 @@ function inherit(p) {
     f.prototype = p;                  // Set its prototype property to p.
     return new f();                   // Use f() to create an "heir" of p.
 }
-{% endhighlight %}
+``` 

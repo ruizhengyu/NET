@@ -61,7 +61,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html>
     <head>
@@ -111,4 +111,4 @@ tags:  JavaScript  JavaScript经典实例
         <iframe src="http://lovechina.xyz/JavaScript%E7%BB%8F%E5%85%B8%E5%AE%9E%E4%BE%8BExample18-3/" id="widgetId"></iframe>
     </body>
 </html>
-{% endhighlight %}
+``` 

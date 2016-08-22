@@ -44,7 +44,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -74,4 +74,4 @@ tags:  JavaScript  JavaScript经典实例
         <p>content</p>
     </body>
 </html>
-{% endhighlight %} 
+``` 

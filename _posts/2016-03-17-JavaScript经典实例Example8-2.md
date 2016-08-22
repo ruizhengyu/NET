@@ -100,7 +100,7 @@ function functionThree(){
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmls="http://ww.w3.org/1999/xhtml">
 <head>
@@ -190,6 +190,6 @@ function functionThree(){
 </div>
 </body>
 </html>
-{% endhighlight %}
+``` 
 
 `hash` 属性是一个可读可写的字符串，该字符串是 URL 的锚部分（从 # 号开始的部分）。

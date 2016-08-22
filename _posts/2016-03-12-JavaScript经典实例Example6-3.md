@@ -60,10 +60,10 @@ window.onload = function(){
 </body>
 </html>
 运行结果如下图
-[![ ](/assets/media/image/media/image/2016-03-12-JavaScript经典实例Example6-3.png)](/assets/media/image/media/image/2016-03-12-JavaScript经典实例Example6-3.png)
+[![ ](/assets/media/image/2016-03-12-JavaScript经典实例Example6-3.png)](/assets/media/image/2016-03-12-JavaScript经典实例Example6-3.png)
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
@@ -115,4 +115,4 @@ window.onload = function(){
 <p>content</p>
 </body>
 </html>
-{% endhighlight %} 
+``` 

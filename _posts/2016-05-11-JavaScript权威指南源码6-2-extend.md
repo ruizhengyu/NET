@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 /*
  * Copy the enumerable properties of p to o, and return o.
  * If o and p have a property by the same name, o's property is overwritten.
@@ -84,4 +84,4 @@ function keys(o) {
     }
     return result;                   // Return the array.
 }
-{% endhighlight %}
+``` 

@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 // range2.js: Another class representing a range of values.  
 
 // This is a constructor function that initializes new Range objects.
@@ -42,4 +42,4 @@ var r = new Range(1,3);   // Create a range object
 r.includes(2);            // => true: 2 is in the range
 r.foreach(console.log);   // Prints 1 2 3
 console.log(r);           // Prints (1...3)
-{% endhighlight %}
+``` 

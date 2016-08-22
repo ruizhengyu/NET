@@ -52,7 +52,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html>
     <head>
@@ -94,4 +94,4 @@ tags:  JavaScript  JavaScript经典实例
         <p>This is paragraph five</p>
     </body>
 </html>
-{% endhighlight %}
+``` 

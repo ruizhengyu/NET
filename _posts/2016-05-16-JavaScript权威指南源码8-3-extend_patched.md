@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight javascript linenos %}
+``` javascript
 // Define an extend function that copies the properties of its second and 
 // subsequent arguments onto its first argument.
 // We work around an IE bug here: in many versions of IE, the for/in loop
@@ -53,4 +53,4 @@ var extend = (function() {  // Assign the return value of this function
     var protoprops = ["toString", "valueOf", "constructor", "hasOwnProperty",
                       "isPrototypeOf", "propertyIsEnumerable","toLocaleString"];
 }());
-{% endhighlight %}
+``` 

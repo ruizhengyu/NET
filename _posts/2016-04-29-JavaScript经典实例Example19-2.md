@@ -86,7 +86,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
@@ -163,4 +163,4 @@ tags:  JavaScript  JavaScript经典实例
         </div>
     </body>
 </html>
-{% endhighlight %}
+``` 

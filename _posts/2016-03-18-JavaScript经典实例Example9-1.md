@@ -79,7 +79,7 @@ Group 3:<input type="radio" name="group1" value="three"/><br />
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <html>
 <head>
 <title>Redio Click Pick</title>
@@ -147,4 +147,4 @@ Group 3:<input type="radio" name="group1" value="three"/><br />
 </form>
 </body>
 </html>
-{% endhighlight %}
+``` 

@@ -78,7 +78,7 @@ Input 3:<input type="text" id="intext3" /><br /><br />
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xthml">
 <head>
@@ -146,4 +146,4 @@ Input 3:<input type="text" id="intext3" /><br /><br />
 <div id="message"></div>
 </body>
 </html>
-{% endhighlight %}
+``` 

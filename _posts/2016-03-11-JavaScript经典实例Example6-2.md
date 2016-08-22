@@ -34,7 +34,7 @@ window.onload = function(){
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
@@ -58,4 +58,4 @@ window.onload = function(){
 <body>
 </body>
 </html>
-{% endhighlight %}
+``` 

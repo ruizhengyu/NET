@@ -38,7 +38,7 @@ tags:  JavaScript  JavaScript经典实例
         </script>
     </head>
     <body>
-        <img src="/assets/media/image/media/image/quanzhixian.jpg" id="image" alt="来自星星的你剧照" />
+        <img src="/assets/media/image/quanzhixian.jpg" id="image" alt="来自星星的你剧照" />
     </body>
 </html>
 
@@ -46,7 +46,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight html linenos %}
+``` html
 <!DOCTYPE html>
 <html>
     <head>
@@ -78,7 +78,7 @@ tags:  JavaScript  JavaScript经典实例
         </script>
     </head>
     <body>
-        <img src="/assets/media/image/media/image/quanzhixian.jpg" id="image" alt="来自星星的你剧照" />
+        <img src="/assets/media/image/quanzhixian.jpg" id="image" alt="来自星星的你剧照" />
     </body>
 </html>
-{% endhighlight %}
+``` 
