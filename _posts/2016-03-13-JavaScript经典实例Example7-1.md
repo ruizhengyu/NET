@@ -116,4 +116,4 @@ function processClick(evt){
 <div id="info"></div>
 </body>
 </html>
-``` 
+{% endhighlight %} 
