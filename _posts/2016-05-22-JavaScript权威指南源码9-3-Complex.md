@@ -10,7 +10,7 @@ Complex.js：表示复数的类
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 /*
  * Complex.js:
  * This file defines a Complex class to represent complex numbers.

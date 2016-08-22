@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight php linenos %}
 <?php
     // 如果没有传递搜索字符串，那么，我们不能搜索
     if (empty($_GET['category'])) {

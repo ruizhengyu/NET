@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // Web Worker线程，反转数组
 onmessage = function(event) {
 

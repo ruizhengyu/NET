@@ -277,7 +277,7 @@ function chart(principal, interest, monthly, payments) {
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <!DOCTYPE html>   
 <html>
 <head>

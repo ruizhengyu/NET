@@ -35,7 +35,7 @@ window.onload = function(){
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <!DOCTYPE html>
 <head>
 <title>Example 1-1</title>
@@ -78,7 +78,7 @@ split() 方法用于把一个字符串分割成字符串数组。
 
 语法
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 stringObject.split(separator,howmany)
 {% endhighlight %}
 
@@ -105,7 +105,7 @@ stringObject.split(separator,howmany)
 prompt() 方法用于显示可提示用户进行输入的对话框。
 
 语法
-{% highlight yaml %} 
+{% highlight html linenos %}
 prompt(text,defaultText)
 {% endhighlight %}
 

@@ -144,7 +144,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html>
     <head>

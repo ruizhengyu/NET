@@ -10,7 +10,7 @@ Set.js：值的任意组合
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 function Set() {          // This is the constructor
     this.values = {};     // The properties of this object hold the set
     this.n = 0;           // How many values are in the set

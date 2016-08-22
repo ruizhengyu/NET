@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // Print the name and value of each property of o.  Return undefined.
 function printprops(o) {
     for(var p in o) 

@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 var BBTest = {
     concatWithSpace : function(string1, string2) {
         return string1 + ' ' + string2;

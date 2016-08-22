@@ -77,7 +77,7 @@ tags:  JavaScript  JavaScript经典实例
     
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <?xml version="1.0"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 3">
     <defs>

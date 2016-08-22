@@ -66,7 +66,7 @@ function filterCities(){
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xthml">
 <head>

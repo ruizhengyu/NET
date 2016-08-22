@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // This function adds property accessor methods for a property with
 // the specified name to the object o.  The methods are named get<name>
 // and set<name>.  If a predicate function is supplied, the setter

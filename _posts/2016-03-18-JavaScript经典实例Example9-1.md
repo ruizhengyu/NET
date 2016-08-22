@@ -79,7 +79,7 @@ Group 3:<input type="radio" name="group1" value="three"/><br />
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <html>
 <head>
 <title>Redio Click Pick</title>

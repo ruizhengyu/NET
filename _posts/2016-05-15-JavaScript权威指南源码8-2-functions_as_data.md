@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // We define some simple functions here
 function add(x,y) { return x + y; }
 function subtract(x,y) { return x - y; }

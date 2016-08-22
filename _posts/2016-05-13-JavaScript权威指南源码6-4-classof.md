@@ -10,7 +10,7 @@ classof()函数
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 function classof(o) {
     if (o === null) return "Null";
     if (o === undefined) return "Undefined";

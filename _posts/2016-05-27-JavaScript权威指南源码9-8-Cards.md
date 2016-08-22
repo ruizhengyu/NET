@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // Define a class to represent a playing card
 function Card(suit, rank) {
     this.suit = suit;         // Each card has a suit

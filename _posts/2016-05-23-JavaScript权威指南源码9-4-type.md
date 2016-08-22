@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 /**
  * Return the type of o as a string:
  *   -If o is null, return "null", if o is NaN, return "nan".

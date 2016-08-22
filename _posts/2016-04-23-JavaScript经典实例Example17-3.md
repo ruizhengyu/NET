@@ -11,7 +11,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // 解析字符串以找到[255, 255, 255]这样的颜色元组
 // 从内部jQuery函数提取它
 jQuery.bbGetRGB = function(color) {

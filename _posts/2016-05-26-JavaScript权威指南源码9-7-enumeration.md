@@ -4,13 +4,13 @@ layout: post
 title: JavaScript经典实例 源码9-7-enumeration
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
----
+---enumeration
 JavaScript中的枚举类型
 ----------------
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // This function creates a new enumerated type.  The argument object specifies
 // the names and values of each instance of the class. The return value
 // is a constructor function that identifies the new class.  Note, however

@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-{% highlight yaml %}
+{% highlight javascript linenos %}
 // range2.js: Another class representing a range of values.  
 
 // This is a constructor function that initializes new Range objects.

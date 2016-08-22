@@ -43,7 +43,7 @@ window.onload = function(){
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <!DOCTYPE html>
 <head>
 <title>Looping and Splicing</title>

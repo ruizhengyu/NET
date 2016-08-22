@@ -22,8 +22,8 @@ tags:  JavaScript  JavaScript经典实例
             }
             
         </style>
-        <script type="text/javascript" src="/assets/media/image/jquery-2.2.4.js"></script>
-        <script type="text/javascript" src="/assets/media/image/basic.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/basic.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('#test').click(function(){
@@ -41,7 +41,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html>
     <head>

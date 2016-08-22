@@ -20,9 +20,9 @@ tags:  JavaScript  JavaScript经典实例
                 margin: 20px;
             }
         </style>
-        <script type="text/javascript" src="/assets/media/image/json2.js"></script>
-        <script type="text/javascript" src="/assets/media/image/jquery-2.2.4.js"></script>
-        <script type="text/javascript" src="/assets/media/image/jquery.rdfquery.rdfa-1.0.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/json2.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/jquery.rdfquery.rdfa-1.0.js"></script>
         <script type="text/javascript">
             window.onload = function() {
                 var j = $('#biblio').rdf()
@@ -69,7 +69,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-{% highlight yaml %} 
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -83,9 +83,9 @@ tags:  JavaScript  JavaScript经典实例
                 margin: 20px;
             }
         </style>
-        <script type="text/javascript" src="/assets/media/image/json2.js"></script>
-        <script type="text/javascript" src="/assets/media/image/jquery-2.2.4.js"></script>
-        <script type="text/javascript" src="/assets/media/image/jquery.rdfquery.rdfa-1.0.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/json2.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="/assets/media/image/media/image/jquery.rdfquery.rdfa-1.0.js"></script>
         <script type="text/javascript">
             window.onload = function() {
                 var j = $('#biblio').rdf()
