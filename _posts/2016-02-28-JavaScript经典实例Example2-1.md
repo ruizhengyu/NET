@@ -6,7 +6,7 @@ categories: JavaScript经典实例
 tags:  JavaScript  JavaScript经典实例
 ---
 
-使用exec和全局标识来查找并突出显示一个文本字符串中的所有匹�
+使用exec和全局标识来查找并突出显示一个文本字符串中的所有匹配
 ----------------
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -41,7 +41,7 @@ tags:  JavaScript  JavaScript经典实例
                 var pattern = document.getElementById('pattern').value,
                     re = new RegExp(pattern,'g'),
                 
-                // 获取字符�
+                // 获取字符串
                     searchString = document.getElementById('incoming').value,
                 
                     matchArray,
@@ -49,23 +49,23 @@ tags:  JavaScript  JavaScript经典实例
                     first = 0,
                     last = 0;
                 
-                // 找到每一个匹�
+                // 找到每一个匹配
                 while((matchArray = re.exec(searchString)) != null) {
                     last = matchArray.index;
                     
                     // 获取所有匹配的字符串，将其连接起来
                     resultString += searchString.substring(first, last);
                 
-                    // 使用class，添加匹配的字符�
+                    // 使用class，添加匹配的字符串
                     resultString += '<span class="found">' + matchArray[0] + '</span>';
                     first = re.lastIndex;a
                 }
                 
-                // 完成字符�
+                // 完成字符串
                 resultString += searchString.substring(first,searchString.length);
                 resultString += '</pre>';
                 
-                // 插入到页�
+                // 插入到页面
                 document.getElementById('searchResult').innerHTML = resultString;
             }
             
@@ -86,7 +86,7 @@ tags:  JavaScript  JavaScript经典实例
 </html>
 
 
-源码如下�
+源码如下：
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -122,7 +122,7 @@ tags:  JavaScript  JavaScript经典实例
                 var pattern = document.getElementById('pattern').value,
                     re = new RegExp(pattern,'g'),
                 
-                // 获取字符�
+                // 获取字符串
                     searchString = document.getElementById('incoming').value,
                 
                     matchArray,
@@ -130,23 +130,23 @@ tags:  JavaScript  JavaScript经典实例
                     first = 0,
                     last = 0;
                 
-                // 找到每一个匹�
+                // 找到每一个匹配
                 while((matchArray = re.exec(searchString)) != null) {
                     last = matchArray.index;
                     
                     // 获取所有匹配的字符串，将其连接起来
                     resultString += searchString.substring(first, last);
                 
-                    // 使用class，添加匹配的字符�
+                    // 使用class，添加匹配的字符串
                     resultString += '<span class="found">' + matchArray[0] + '</span>';
                     first = re.lastIndex;a
                 }
                 
-                // 完成字符�
+                // 完成字符串
                 resultString += searchString.substring(first,searchString.length);
                 resultString += '</pre>';
                 
-                // 插入到页�
+                // 插入到页面
                 document.getElementById('searchResult').innerHTML = resultString;
             }
             
