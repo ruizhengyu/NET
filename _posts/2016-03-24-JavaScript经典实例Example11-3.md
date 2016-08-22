@@ -75,7 +75,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE>
 <html>
     <head>
@@ -140,7 +140,7 @@ tags:  JavaScript  JavaScript经典实例
         </div>
     </body>
 </html>
-``` 
+{% endhighlight %}
 
 `getElementsByTagNameNS()`方法可返回带有指定名称和命名空间的所有元素的一个节点列表。
 `getElementsByTagNameNS(ns,name)``ns`	字符串值，可规定需检索的命名空间名称。值 "*" 可匹配所有的标签。

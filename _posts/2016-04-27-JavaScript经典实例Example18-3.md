@@ -46,7 +46,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html>
     <head>
@@ -81,4 +81,4 @@ tags:  JavaScript  JavaScript经典实例
         <img src="/assets/media/image/quanzhixian.jpg" id="image" alt="来自星星的你剧照" />
     </body>
 </html>
-``` 
+{% endhighlight %}

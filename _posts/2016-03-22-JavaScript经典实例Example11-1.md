@@ -46,7 +46,7 @@ window.onload = function(){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xthml" xml:lang="en" lang="en">
 <head>
@@ -77,4 +77,4 @@ window.onload = function(){
 <p><img src="orchids9.preview.jpg" alt="Orchid from MBG 2009 orchid show" /></p>
 </body>
 </html>
-``` 
+{% endhighlight %}

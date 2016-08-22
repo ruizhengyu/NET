@@ -147,7 +147,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
     <head>
@@ -285,4 +285,4 @@ tags:  JavaScript  JavaScript经典实例
         <div id="cookiestr"><p></p></div>
     </body>
 </html>
-``` 
+{% endhighlight %}

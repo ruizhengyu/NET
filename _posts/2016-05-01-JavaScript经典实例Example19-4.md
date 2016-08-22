@@ -69,7 +69,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -129,4 +129,4 @@ tags:  JavaScript  JavaScript经典实例
         <div id="result2"></div>
     </body>
 </html>
-``` 
+{% endhighlight %}

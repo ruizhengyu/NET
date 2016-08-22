@@ -10,7 +10,7 @@ ECMAScript3版本的Function.bind()方法
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 if (!Function.prototype.bind) {
     Function.prototype.bind = function(o /*, args */) {
         // Save the this and arguments values into variables so we can
@@ -31,4 +31,4 @@ if (!Function.prototype.bind) {
         };
     };
 }
-``` 
+{% endhighlight %}

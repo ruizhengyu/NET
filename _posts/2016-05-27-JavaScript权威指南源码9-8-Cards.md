@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 // Define a class to represent a playing card
 function Card(suit, rank) {
     this.suit = suit;         // Each card has a suit
@@ -77,4 +77,4 @@ Deck.prototype.deal = function(n) {
 // Create a new deck of cards, shuffle it, and deal a bridge hand
 var deck = (new Deck()).shuffle();
 var hand = deck.deal(13).sort(Card.orderBySuit);
-``` 
+{% endhighlight %}

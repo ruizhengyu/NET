@@ -61,7 +61,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html>
     <head>
@@ -112,7 +112,7 @@ tags:  JavaScript  JavaScript经典实例
         </table>
     </body>
 </html>
-``` 
+{% endhighlight %}
 
 `<tbody>` 标签表格主体（正文）。该标签用于组合 `HTML` 表格的主体内容。
 `tbody` 元素应该与 `thead` 和 `tfoot` 元素结合起来使用。

@@ -145,7 +145,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html>
     <head>
@@ -280,5 +280,5 @@ tags:  JavaScript  JavaScript经典实例
         </form>
     </body>
 </html>
-``` 
+{% endhighlight %}
 `onblur` 事件会在对象失去焦点时发生。

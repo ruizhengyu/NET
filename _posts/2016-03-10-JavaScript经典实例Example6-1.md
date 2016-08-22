@@ -54,7 +54,7 @@ function concatenateString(strings, separator){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <head>
@@ -90,4 +90,4 @@ function concatenateString(strings, separator){
 <body>
 </body>
 </html>
-``` 
+{% endhighlight %}

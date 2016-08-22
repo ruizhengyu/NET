@@ -66,7 +66,7 @@ window.onload = function(){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html xmls="http://ww.w3.org/1999/xhtml">
 <head>
@@ -122,6 +122,6 @@ window.onload = function(){
 <div id = "breadcrumb"></div>
 </body>
 </html>
-``` 
+{% endhighlight %}
 
 `pathname` 属性是一个可读可写的字符串，可设置或返回当前 `URL` 的路径部分。

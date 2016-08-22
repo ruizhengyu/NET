@@ -77,7 +77,7 @@ function convertISO8601toDate(dtstr){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -143,4 +143,4 @@ function convertISO8601toDate(dtstr){
 <div id="result"></div>
 </body>
 </html>
-``` 
+{% endhighlight %}

@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 // Return true if o implements the methods specified by the remaining args.
 function quacks(o /*, ... */) {
     for(var i = 1; i < arguments.length; i++) {  // for each argument after o
@@ -34,4 +34,4 @@ function quacks(o /*, ... */) {
     // If we're still here, then o implements everything
     return true;
 }
-``` 
+{% endhighlight %}

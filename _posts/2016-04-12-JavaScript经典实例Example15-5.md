@@ -71,7 +71,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html>
     <head>
@@ -132,4 +132,4 @@ tags:  JavaScript  JavaScript经典实例
         </script>
     </body>
 </html>
-``` 
+{% endhighlight %}

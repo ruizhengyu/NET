@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 /*
  * Add a nonenumerable extend() method to Object.prototype.
  * This method extends the object on which it is called by copying properties
@@ -39,4 +39,4 @@ Object.defineProperty(Object.prototype,
             }
         }
     });
-``` 
+{% endhighlight %}

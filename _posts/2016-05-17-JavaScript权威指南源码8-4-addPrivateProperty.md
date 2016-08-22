@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 // This function adds property accessor methods for a property with
 // the specified name to the object o.  The methods are named get<name>
 // and set<name>.  If a predicate function is supplied, the setter
@@ -50,4 +50,4 @@ addPrivateProperty(o, "Name", function(x) { return typeof x == "string"; });
 o.setName("Frank");       // Set the property value
 console.log(o.getName()); // Get the property value
 o.setName(0);             // Try to set a value of the wrong type
-``` 
+{% endhighlight %}

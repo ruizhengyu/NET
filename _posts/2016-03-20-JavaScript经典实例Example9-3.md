@@ -66,7 +66,7 @@ function filterCities(){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xthml">
 <head>
@@ -122,4 +122,4 @@ function filterCities(){
 </form>
 </body>
 </html>
-``` 
+{% endhighlight %}

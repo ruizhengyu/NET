@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 /**
  * Return the type of o as a string:
  *   -If o is null, return "null", if o is NaN, return "nan".
@@ -55,4 +55,4 @@ Function.prototype.getName = function() {
     if ("name" in this) return this.name;
     return this.name = this.toString().match(/function\s*([^(]*)\(/)[1];
 };
-``` 
+{% endhighlight %}

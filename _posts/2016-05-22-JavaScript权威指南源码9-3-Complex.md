@@ -10,7 +10,7 @@ Complex.js：表示复数的类
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 /*
  * Complex.js:
  * This file defines a Complex class to represent complex numbers.
@@ -97,4 +97,4 @@ Complex.parse = function(s) {
 // The underscore in its name indicates that it is intended for internal
 // use and should not be considered part of the public API of this class.
 Complex._format = /^\{([^,]+),([^}]+)\}$/;
-``` 
+{% endhighlight %}

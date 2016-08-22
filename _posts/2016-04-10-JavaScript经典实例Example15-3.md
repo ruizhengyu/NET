@@ -35,7 +35,7 @@ SVG文件中的JavaScript的展示
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
     <script type="text/javascript">
@@ -59,4 +59,4 @@ SVG文件中的JavaScript的展示
     </script>
     <rect id="square" width="400" height="400" fill="#f00" x="10" y="20" />
 </svg>
-``` 
+{% endhighlight %}

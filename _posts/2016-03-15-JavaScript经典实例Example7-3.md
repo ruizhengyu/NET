@@ -64,7 +64,7 @@ function processClick(evt){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <head>
 <title>Filtering Input</title>
@@ -117,7 +117,7 @@ function processClick(evt){
 </form>
 </body>
 </html>
-``` 
+{% endhighlight %}
 
 event.stopPropagation() 方法阻止事件冒泡到父元素，阻止任何父事件处理程序被执行。
 

@@ -51,7 +51,7 @@ function stopStartElement(){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <head>
 <title>interval and anonymous function</title>
@@ -91,4 +91,4 @@ function stopStartElement(){
 <body>
 <div id="redbox"></div>
 </body>
-``` 
+{% endhighlight %}

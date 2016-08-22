@@ -12,7 +12,7 @@ tags:  JavaScript  JavaScript经典实例
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,6 +48,6 @@ tags:  JavaScript  JavaScript经典实例
         <p>Running tests of test.js. View source to see tests.
     </body>
 </html>
-``` 
+{% endhighlight %}
 
 JUnit测试软件下载：[下载地址](/assets/media/image/jsunit2_2.zip)

@@ -66,7 +66,7 @@ Function.bind用于定时器的用法展示
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <html>
     <head>
@@ -123,4 +123,4 @@ Function.bind用于定时器的用法展示
         </div>
     </body>
 </html>
-``` 
+{% endhighlight %}

@@ -88,7 +88,7 @@ function clickBoxTwo(evt){
 
 源码如下：
 
-``` html
+{% highlight yaml %} 
 <!DOCTYPE html>
 <head>
 <title>Prevent Propagation</title>
@@ -166,7 +166,7 @@ function clickBoxTwo(evt){
 <button id="stop">Stop Propagation</button>
 </body>
 </html>
-``` 
+{% endhighlight %}
 
 addEventListener() 方法用于向指定元素添加事件句柄。
 

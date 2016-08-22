@@ -10,7 +10,7 @@ tags:  JavaScript  JavaScript权威指南
 
 源码如下：
 
-``` javascript
+{% highlight yaml %}
 // We define some simple functions here
 function add(x,y) { return x + y; }
 function subtract(x,y) { return x - y; }
@@ -49,4 +49,4 @@ function operate2(operation, operand1, operand2) {
 var j = operate2("add", "hello", operate2("add", " ", "world"));
 // Using the predefined Math.pow() function:
 var k = operate2("pow", 10, 2);
-``` 
+{% endhighlight %}
