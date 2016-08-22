@@ -4,7 +4,7 @@ layout: post
 title: JavaScript经典实例 源码9-7-enumeration
 categories: JavaScript权威指南
 tags:  JavaScript  JavaScript权威指南
----enumeration
+---
 JavaScript中的枚举类型
 ----------------
 
