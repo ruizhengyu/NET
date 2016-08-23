@@ -2,3 +2,6 @@
 layout: default
 ---
 {% include page.html %}
+{% if page.comments %}
+{% include comments.md %}
+{% endif %}
