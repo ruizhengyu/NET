@@ -30,3 +30,6 @@ tags_path: tags.html
 BASE_PATH:
 
 markdown: kramdown
+duoshuo: rui
+beian: 
+cnzz: 1257366192
